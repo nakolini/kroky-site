@@ -11,7 +11,7 @@
 <div class="container prose">
   <a class="back" href="index.html">&larr; Back</a>
   <h1>Privacy Policy</h1>
-  <p class="meta">Effective date: October 20, 2026</p>
+  <p class="meta">Effective date: October 22, 2026</p>
 
   <p>Kroky: Walk Breaks ("Kroky") is an iPhone app that suggests walks. This policy explains, in plain language, what the app uses, where it goes, and what stays on your iPhone. The short version: <strong>we don't collect anything.</strong> Kroky has no server, no account and no analytics. The few things that leave your iPhone go to Apple or to OpenStreetMap so the app can find parks, plan a route and check the weather.</p>
 
@@ -19,7 +19,7 @@
   <p><strong>Nothing.</strong> We, the makers of Kroky, don't receive your steps, your location, your calendar or anything else. There is no login and no server we run.</p>
 
   <h2>Steps from Apple Health</h2>
-  <p>Kroky reads your step count (and your walking step length, to turn steps into distance) from Apple Health to know when you've been sitting and how many steps are left today. It only reads Health data. It never writes to Health. Your Health data is read and used on your iPhone and is never sent anywhere.</p>
+  <p>Kroky reads your step count (and your walking step length, to turn steps into distance) from Apple Health to know when you've been sitting and how many steps are left today. It only reads Health data. It never writes to Health. Your Health data is read and used on your iPhone and is never sent anywhere, unless you export your walks from a test version yourself (see below).</p>
 
   <h2>Location</h2>
   <p>Kroky asks for location only <strong>while you're using the app</strong>, never "Always". It gets one location fix when you plan a walk and when Home shows the weather, to plan a loop near you and to get the weather forecast.</p>
@@ -31,7 +31,7 @@
   <ul>
     <li><strong>Apple WeatherKit</strong> receives a location (your current one on Home, or the rounded saved one for reminders) to return the hourly forecast. This goes through Apple and is covered by <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>.</li>
     <li><strong>Apple Maps (MapKit)</strong> receives the start and turning points of your walk to plan walking routes, and the area around you to find parks the walk goes through. During a walk, it also receives your current location when Kroky plans the way to the start, back to the route, or home. This goes through Apple.</li>
-    <li><strong>OpenStreetMap's Overpass API</strong> (overpass-api.de) receives the area to search for parks: an approximate starting point (rounded to about 100&nbsp;m) and a search radius. No account, device identifier or other personal data is sent with it. Park lists are cached on your iPhone for up to a week, so the same area isn't asked for again.</li>
+    <li><strong>OpenStreetMap's Overpass API</strong> (overpass-api.de) receives the area to search for parks and main roads (so loops can keep off busy streets): an approximate starting point (rounded to about 100&nbsp;m) and a search radius. No account, device identifier or other personal data is sent with it. The results are cached on your iPhone for up to a week, so the same area isn't asked for again.</li>
     <li><strong>Google Maps or Apple Maps</strong> receives the loop only if you choose Open in Google Maps or Open in Apple Maps; Go follows the walk in Kroky itself. That app's own privacy policy applies from then on.</li>
   </ul>
 
