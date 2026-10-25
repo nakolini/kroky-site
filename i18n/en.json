@@ -134,7 +134,7 @@
   "g1.setup_1": "Allow Kroky to read steps from Apple Health. It only reads; it never writes.",
   "g1.setup_2": "Pick a daily goal: 6,000, 8,000 or 10,000 steps.",
   "g1.setup_3": "Set the hours and days Kroky may nudge you, for example 9 AM to 6 PM on weekdays.",
-  "g1.setup_4": "In Settings, choose how long a sit counts as too long (90 minutes by default), and turn on Skip my meetings if you want quiet during calendar events.",
+  "g1.setup_4": "In Settings, set Nudge after sitting for (90 minutes by default), and turn on Skip my meetings if you want quiet during calendar events.",
   "g1.limits_h2": "Good to know",
   "g1.limits": "Sitting nudges are part of Kroky Pro; the free plan gives you a new loop every day when you open the app. Kroky sends at most two nudges a day. iOS decides exactly when an app can check in the background, so a nudge can come a little later than expected.",
   "g2.slug": "how-long-to-walk-for-step-goal",
