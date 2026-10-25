@@ -1,0 +1,1276 @@
+{
+ "en": {
+  "route": {
+   "title": "A walk sized\nto your step goal",
+   "subtitle": "A loop through nearby parks that starts and ends where you are."
+  },
+  "home": {
+   "title": "Knows when you've\nsat too long",
+   "subtitle": "Kroky reads your steps and waits for dry weather."
+  },
+  "guide": {
+   "title": "Every turn,\nright in Kroky",
+   "subtitle": "Follow the loop on a live map, with spoken directions if you like."
+  },
+  "nudge": {
+   "title": "A nudge at the\nright moment",
+   "subtitle": "Only in your hours and only when it's dry. It can skip your meetings, too."
+  },
+  "walk": {
+   "title": "Close today's\nstep gap",
+   "subtitle": "See what the walk added, and keep the loops you like."
+  },
+  "settings": {
+   "title": "No account.\nNo tracking.",
+   "subtitle": "Set your hours and goal. Your steps never leave your iPhone."
+  }
+ },
+ "ar": {
+  "home": {
+   "title": "يعرف متى\nأطلت الجلوس",
+   "subtitle": "يقرأ Kroky خطواتك وينتظر طقسًا جافًا."
+  },
+  "nudge": {
+   "title": "تنبيه في\nاللحظة المناسبة",
+   "subtitle": "فقط في ساعاتك وعندما يكون الطقس جافًا. ويمكنه تخطّي اجتماعاتك أيضًا."
+  },
+  "route": {
+   "title": "مشية على مقاس\nهدف خطواتك",
+   "subtitle": "جولة عبر الحدائق القريبة تبدأ وتنتهي حيث أنت."
+  },
+  "guide": {
+   "title": "كل منعطف،\nداخل Kroky",
+   "subtitle": "اتبع الجولة على خريطة حيّة، مع اتجاهات صوتية إن أردت."
+  },
+  "walk": {
+   "title": "أكمِل هدف\nخطواتك اليوم",
+   "subtitle": "شاهد ما أضافته المشية، واحتفظ بالجولات التي تعجبك."
+  },
+  "settings": {
+   "title": "بلا حساب.\nبلا تتبّع.",
+   "subtitle": "حدّد ساعاتك وهدفك. خطواتك لا تغادر iPhone أبدًا."
+  }
+ },
+ "bn": {
+  "home": {
+   "title": "বেশি বসে থাকলে\nKroky টের পায়",
+   "subtitle": "Kroky আপনার পদক্ষেপ দেখে এবং শুকনো আবহাওয়ার অপেক্ষা করে।"
+  },
+  "nudge": {
+   "title": "ঠিক সময়ে\nএকটি তাগাদা",
+   "subtitle": "কেবল আপনার সময়ে, আর কেবল শুকনো আবহাওয়ায়। আপনার মিটিংও বাদ দিতে পারে।"
+  },
+  "route": {
+   "title": "পদক্ষেপের লক্ষ্য\nমেপে হাঁটা",
+   "subtitle": "কাছের পার্কগুলোর মধ্য দিয়ে একটি লুপ, যা আপনি যেখানে আছেন সেখানেই শুরু ও শেষ হয়।"
+  },
+  "guide": {
+   "title": "প্রতিটি বাঁক,\nKroky-তেই",
+   "subtitle": "লাইভ ম্যাপে লুপ ধরে হাঁটুন, চাইলে কথায় দিকনির্দেশসহ।"
+  },
+  "walk": {
+   "title": "আজকের পদক্ষেপের\nঘাটতি পূরণ করুন",
+   "subtitle": "দেখুন হাঁটায় কত যোগ হলো, আর পছন্দের লুপগুলো রেখে দিন।"
+  },
+  "settings": {
+   "title": "অ্যাকাউন্ট নেই।\nট্র্যাকিং নেই।",
+   "subtitle": "আপনার সময় ও লক্ষ্য ঠিক করুন। আপনার পদক্ষেপ কখনো আপনার iPhone ছেড়ে যায় না।"
+  }
+ },
+ "ca": {
+  "home": {
+   "title": "Sap quan fa massa\nestona que seus",
+   "subtitle": "Kroky llegeix els teus passos i espera que no plogui."
+  },
+  "nudge": {
+   "title": "Un avís en el\nmoment just",
+   "subtitle": "Només en el teu horari i només quan no plou. També pot saltar les reunions."
+  },
+  "route": {
+   "title": "Una caminada a la\nmida de l'objectiu",
+   "subtitle": "Un circuit pels parcs propers que comença i acaba on ets."
+  },
+  "guide": {
+   "title": "Cada gir,\ndins de Kroky",
+   "subtitle": "Segueix el circuit en un mapa en directe, amb indicacions de veu si vols."
+  },
+  "walk": {
+   "title": "Tanca la bretxa\nde passos d'avui",
+   "subtitle": "Mira què ha sumat la caminada i conserva els circuits que t'agradin."
+  },
+  "settings": {
+   "title": "Sense compte.\nSense rastreig.",
+   "subtitle": "Tria el teu horari i l'objectiu. Els teus passos no surten mai del teu iPhone."
+  }
+ },
+ "cs": {
+  "home": {
+   "title": "Pozná, kdy sedíte\npříliš dlouho",
+   "subtitle": "Kroky zná vaše kroky a počká na suché počasí."
+  },
+  "nudge": {
+   "title": "Pobídka ve\nsprávnou chvíli",
+   "subtitle": "Jen v čase, který si určíte, a jen když neprší. Umí vynechat i vaše schůzky."
+  },
+  "route": {
+   "title": "Procházka na míru\nvašemu cíli",
+   "subtitle": "Okruh parky v okolí, který začíná i končí tam, kde právě jste."
+  },
+  "guide": {
+   "title": "Každá odbočka\npřímo v Kroky",
+   "subtitle": "Jděte po okruhu podle živé mapy, s hlasovými pokyny, pokud chcete."
+  },
+  "walk": {
+   "title": "Doplňte dnešní\nchybějící kroky",
+   "subtitle": "Podívejte se, co procházka přidala, a zachovejte si okruhy, které se vám líbí."
+  },
+  "settings": {
+   "title": "Bez účtu.\nBez sledování.",
+   "subtitle": "Nastavte si hodiny a cíl. Vaše kroky nikdy neopustí váš iPhone."
+  }
+ },
+ "da": {
+  "home": {
+   "title": "Ved, når du har\nsiddet for længe",
+   "subtitle": "Kroky læser dine skridt og venter på tørvejr."
+  },
+  "nudge": {
+   "title": "En påmindelse i\nrette øjeblik",
+   "subtitle": "Kun inden for dine tider og kun i tørvejr. Kroky kan også springe dine møder over."
+  },
+  "route": {
+   "title": "En gåtur, der\npasser til dit mål",
+   "subtitle": "En rundtur gennem parker i nærheden, der starter og slutter, hvor du er."
+  },
+  "guide": {
+   "title": "Hvert sving,\nlige i Kroky",
+   "subtitle": "Følg rundturen på et livekort med talte anvisninger, hvis du vil."
+  },
+  "walk": {
+   "title": "Nå dagens\nskridtmål",
+   "subtitle": "Se, hvad gåturen gav, og behold de rundture, du kan lide."
+  },
+  "settings": {
+   "title": "Ingen konto.\nIngen sporing.",
+   "subtitle": "Vælg dine tider og dit mål. Dine skridt forlader aldrig din iPhone."
+  }
+ },
+ "de": {
+  "home": {
+   "title": "Merkt, wenn du\nzu lange sitzt",
+   "subtitle": "Kroky liest deine Schritte und wartet auf trockenes Wetter."
+  },
+  "nudge": {
+   "title": "Erinnert dich\nzur rechten Zeit",
+   "subtitle": "Nur in deinen Zeiten und nur, wenn es trocken ist. Auf Wunsch auch nicht in Meetings."
+  },
+  "route": {
+   "title": "Eine Runde nach\ndeinem Tagesziel",
+   "subtitle": "Eine Runde durch Parks in der Nähe, die dort beginnt und endet, wo du bist."
+  },
+  "guide": {
+   "title": "Jede Abbiegung,\ndirekt in Kroky",
+   "subtitle": "Folge der Runde auf einer Live-Karte, auf Wunsch mit Sprachansagen."
+  },
+  "walk": {
+   "title": "Erreich heute\ndein Schrittziel",
+   "subtitle": "Sieh, was der Spaziergang gebracht hat, und behalte die Runden, die dir gefallen."
+  },
+  "settings": {
+   "title": "Kein Konto.\nKein Tracking.",
+   "subtitle": "Lege deine Zeiten und dein Ziel fest. Deine Schritte verlassen nie dein iPhone."
+  }
+ },
+ "el": {
+  "home": {
+   "title": "Ξέρει πότε\nκαθίσατε πολύ",
+   "subtitle": "Το Kroky διαβάζει τα βήματά σας και περιμένει να μη βρέχει."
+  },
+  "nudge": {
+   "title": "Ένα σκούντημα\nτη σωστή στιγμή",
+   "subtitle": "Μόνο στις ώρες σας, μόνο όταν δεν βρέχει. Παραλείπει και τις συσκέψεις, αν θέλετε."
+  },
+  "route": {
+   "title": "Μια βόλτα στα\nμέτρα του στόχου",
+   "subtitle": "Ένας γύρος από κοντινά πάρκα που ξεκινά και τελειώνει εκεί που βρίσκεστε."
+  },
+  "guide": {
+   "title": "Κάθε στροφή,\nμέσα στο Kroky",
+   "subtitle": "Ακολουθήστε τον γύρο σε ζωντανό χάρτη, με φωνητικές οδηγίες αν θέλετε."
+  },
+  "walk": {
+   "title": "Καλύψτε ό,τι\nλείπει σήμερα",
+   "subtitle": "Δείτε τι πρόσθεσε η βόλτα και κρατήστε τους γύρους που σας αρέσουν."
+  },
+  "settings": {
+   "title": "Χωρίς λογαριασμό.\nΧωρίς ιχνηλάτηση.",
+   "subtitle": "Ορίστε ώρες και στόχο. Τα βήματά σας δεν φεύγουν ποτέ από το iPhone σας."
+  }
+ },
+ "en-GB": {
+  "home": {
+   "title": "Knows when you've\nsat too long",
+   "subtitle": "Kroky reads your steps and waits for dry weather."
+  },
+  "nudge": {
+   "title": "A nudge at the\nright moment",
+   "subtitle": "Only in your hours and only when it's dry. It can skip your meetings, too."
+  },
+  "route": {
+   "title": "A walk sized\nto your step goal",
+   "subtitle": "A loop through nearby parks that starts and ends where you are."
+  },
+  "guide": {
+   "title": "Every turn,\nright in Kroky",
+   "subtitle": "Follow the loop on a live map, with spoken directions if you like."
+  },
+  "walk": {
+   "title": "Close today's\nstep gap",
+   "subtitle": "See what the walk added, and keep the loops you like."
+  },
+  "settings": {
+   "title": "No account.\nNo tracking.",
+   "subtitle": "Set your hours and goal. Your steps never leave your iPhone."
+  }
+ },
+ "en-AU": {
+  "home": {
+   "title": "Knows when you've\nsat too long",
+   "subtitle": "Kroky reads your steps and waits for dry weather."
+  },
+  "nudge": {
+   "title": "A nudge at the\nright moment",
+   "subtitle": "Only in your hours and only when it's dry. It can skip your meetings, too."
+  },
+  "route": {
+   "title": "A walk sized\nto your step goal",
+   "subtitle": "A loop through nearby parks that starts and ends where you are."
+  },
+  "guide": {
+   "title": "Every turn,\nright in Kroky",
+   "subtitle": "Follow the loop on a live map, with spoken directions if you like."
+  },
+  "walk": {
+   "title": "Close today's\nstep gap",
+   "subtitle": "See what the walk added, and keep the loops you like."
+  },
+  "settings": {
+   "title": "No account.\nNo tracking.",
+   "subtitle": "Set your hours and goal. Your steps never leave your iPhone."
+  }
+ },
+ "es": {
+  "home": {
+   "title": "Sabe cuándo llevas\nmucho sin moverte",
+   "subtitle": "Kroky lee tus pasos y espera a que no llueva."
+  },
+  "nudge": {
+   "title": "Un aviso en el\nmomento justo",
+   "subtitle": "Solo en tu horario y solo si no llueve. También puede evitar tus reuniones."
+  },
+  "route": {
+   "title": "Un paseo a la\nmedida de tu meta",
+   "subtitle": "Un circuito por parques cercanos que empieza y termina donde estás."
+  },
+  "guide": {
+   "title": "Cada giro,\ndentro de Kroky",
+   "subtitle": "Sigue el circuito en un mapa en directo, con indicaciones por voz si quieres."
+  },
+  "walk": {
+   "title": "Completa tu meta\nde pasos de hoy",
+   "subtitle": "Mira lo que ha sumado el paseo y guarda los circuitos que te gusten."
+  },
+  "settings": {
+   "title": "Sin cuenta.\nSin rastreo.",
+   "subtitle": "Elige tu horario y tu meta. Tus pasos nunca salen de tu iPhone."
+  }
+ },
+ "es-419": {
+  "home": {
+   "title": "Sabe cuándo llevas\nmucho sin moverte",
+   "subtitle": "Kroky lee tus pasos y espera a que no llueva."
+  },
+  "nudge": {
+   "title": "Un aviso en el\nmomento justo",
+   "subtitle": "Solo en tu horario y solo si no llueve. También puede evitar tus reuniones."
+  },
+  "route": {
+   "title": "Una caminata a la\nmedida de tu meta",
+   "subtitle": "Un circuito por parques cercanos que empieza y termina donde estás."
+  },
+  "guide": {
+   "title": "Cada giro,\ndentro de Kroky",
+   "subtitle": "Sigue el circuito en un mapa en vivo, con indicaciones por voz si quieres."
+  },
+  "walk": {
+   "title": "Completa tu meta\nde pasos de hoy",
+   "subtitle": "Mira lo que sumó la caminata y guarda los circuitos que te gusten."
+  },
+  "settings": {
+   "title": "Sin cuenta.\nSin rastreo.",
+   "subtitle": "Elige tu horario y tu meta. Tus pasos nunca salen de tu iPhone."
+  }
+ },
+ "fi": {
+  "home": {
+   "title": "Tietää, kun olet\nistunut liikaa",
+   "subtitle": "Kroky lukee askeleesi ja odottaa poutasäätä."
+  },
+  "nudge": {
+   "title": "Tönäisy juuri\noikealla hetkellä",
+   "subtitle": "Vain valitsemiesi tuntien aikana ja vain poudalla. Se voi myös ohittaa kokouksesi."
+  },
+  "route": {
+   "title": "Askeltavoitteesi\nmukainen kävely",
+   "subtitle": "Lenkki läheisten puistojen kautta. Se alkaa ja päättyy siihen, missä olet."
+  },
+  "guide": {
+   "title": "Jokainen käännös\nsuoraan Krokyssa",
+   "subtitle": "Seuraa lenkkiä live-kartalla, halutessasi puheopastuksen kanssa."
+  },
+  "walk": {
+   "title": "Kurota tänään\naskelvaje umpeen",
+   "subtitle": "Näe, mitä kävely toi lisää, ja pidä lenkit, joista pidät."
+  },
+  "settings": {
+   "title": "Ei tiliä.\nEi seurantaa.",
+   "subtitle": "Valitse tunnit ja tavoite. Askeleesi eivät koskaan poistu iPhonestasi."
+  }
+ },
+ "fr": {
+  "home": {
+   "title": "Sait quand vous\nrestez trop assis",
+   "subtitle": "Kroky lit vos pas et attend un temps sec."
+  },
+  "nudge": {
+   "title": "Une alerte au\nbon moment",
+   "subtitle": "Seulement pendant vos heures et par temps sec. Il peut aussi éviter vos réunions."
+  },
+  "route": {
+   "title": "Une boucle adaptée\nà votre objectif",
+   "subtitle": "Une boucle par les parcs voisins, qui part et revient là où vous êtes."
+  },
+  "guide": {
+   "title": "Chaque virage,\nsans quitter Kroky",
+   "subtitle": "Suivez la boucle sur une carte en direct, avec instructions vocales si vous le voulez."
+  },
+  "walk": {
+   "title": "Comblez l'écart\nde pas du jour",
+   "subtitle": "Voyez ce que la balade a ajouté et gardez les boucles qui vous plaisent."
+  },
+  "settings": {
+   "title": "Aucun compte.\nAucun suivi.",
+   "subtitle": "Réglez vos heures et votre objectif. Vos pas ne quittent jamais votre iPhone."
+  }
+ },
+ "fr-CA": {
+  "home": {
+   "title": "Sait quand vous\nrestez trop assis",
+   "subtitle": "Kroky lit vos pas et attend un temps sec."
+  },
+  "nudge": {
+   "title": "Une alerte au\nbon moment",
+   "subtitle": "Seulement pendant vos heures et par temps sec. Il peut aussi éviter vos réunions."
+  },
+  "route": {
+   "title": "Une boucle adaptée\nà votre objectif",
+   "subtitle": "Une boucle dans les parcs voisins, qui part et revient là où vous êtes."
+  },
+  "guide": {
+   "title": "Chaque virage,\nsans quitter Kroky",
+   "subtitle": "Suivez la boucle sur une carte en direct, avec instructions vocales si vous le voulez."
+  },
+  "walk": {
+   "title": "Comblez l'écart\nde pas du jour",
+   "subtitle": "Voyez ce que la marche a ajouté et gardez les boucles qui vous plaisent."
+  },
+  "settings": {
+   "title": "Aucun compte.\nAucun suivi.",
+   "subtitle": "Réglez vos heures et votre objectif. Vos pas ne quittent jamais votre iPhone."
+  }
+ },
+ "gu": {
+  "home": {
+   "title": "બહુ લાંબું બેઠા?\nKroky જાણે છે",
+   "subtitle": "Kroky તમારાં પગલાં જુએ છે અને વરસાદ અટકે તેની રાહ જુએ છે."
+  },
+  "nudge": {
+   "title": "યોગ્ય સમયે\nએક અલર્ટ",
+   "subtitle": "ફક્ત તમારા કલાકોમાં, અને ફક્ત વરસાદ ન હોય ત્યારે. મીટિંગ દરમિયાન શાંત પણ રહી શકે છે."
+  },
+  "route": {
+   "title": "પગલાંના લક્ષ્ય\nમુજબની વૉક",
+   "subtitle": "નજીકના પાર્કમાંથી પસાર થતો લૂપ, જે તમે જ્યાં છો ત્યાંથી શરૂ થઈ ત્યાં જ પૂરો થાય છે."
+  },
+  "guide": {
+   "title": "દરેક વળાંક,\nKrokyમાં જ",
+   "subtitle": "લાઇવ નકશા પર લૂપને અનુસરો, ઇચ્છો તો બોલીને દિશાનિર્દેશ સાથે."
+  },
+  "walk": {
+   "title": "આજનાં પગલાંની\nઘટ પૂરી કરો",
+   "subtitle": "જુઓ કે વૉકથી કેટલાં પગલાં ઉમેરાયાં, અને ગમતા લૂપ રાખી લો."
+  },
+  "settings": {
+   "title": "એકાઉન્ટ નહીં.\nટ્રૅકિંગ નહીં.",
+   "subtitle": "તમારા કલાકો અને લક્ષ્ય સેટ કરો. તમારાં પગલાં ક્યારેય તમારા iPhoneની બહાર જતાં નથી."
+  }
+ },
+ "he": {
+  "home": {
+   "title": "יודע מתי\nישבת יותר מדי",
+   "subtitle": "Kroky קורא את הצעדים שלך ומחכה למזג אוויר יבש."
+  },
+  "nudge": {
+   "title": "תזכורת תנועה\nברגע הנכון",
+   "subtitle": "רק בשעות שבחרת ורק כשיבש. אפשר גם לדלג על הפגישות."
+  },
+  "route": {
+   "title": "הליכה בהתאמה\nליעד הצעדים",
+   "subtitle": "סיבוב דרך פארקים סמוכים, שמתחיל ונגמר במקום שבו נמצאים."
+  },
+  "guide": {
+   "title": "כל פנייה,\nישר בתוך Kroky",
+   "subtitle": "מעקב אחר הסיבוב במפה חיה, עם הנחיות קוליות אם רוצים."
+  },
+  "walk": {
+   "title": "סגירת פער\nהצעדים של היום",
+   "subtitle": "רואים כמה ההליכה הוסיפה, ושומרים את הסיבובים האהובים."
+  },
+  "settings": {
+   "title": "בלי חשבון.\nבלי מעקב.",
+   "subtitle": "קובעים שעות ויעד. הצעדים שלך לא יוצאים מה-iPhone אף פעם."
+  }
+ },
+ "hi": {
+  "home": {
+   "title": "बहुत देर बैठे?\nKroky को पता है",
+   "subtitle": "Kroky आपके कदम देखता है और बारिश रुकने का इंतज़ार करता है।"
+  },
+  "nudge": {
+   "title": "सही समय पर\nएक अलर्ट",
+   "subtitle": "सिर्फ़ आपके घंटों में, और सिर्फ़ जब बारिश न हो। मीटिंग के दौरान यह चुप भी रह सकता है।"
+  },
+  "route": {
+   "title": "कदमों के लक्ष्य\nजितनी वॉक",
+   "subtitle": "पास के पार्कों से होकर एक लूप, जो वहीं शुरू और खत्म होता है जहाँ आप हैं।"
+  },
+  "guide": {
+   "title": "हर मोड़,\nKroky में ही",
+   "subtitle": "लाइव मैप पर लूप के साथ चलें, चाहें तो बोलकर दिशा-निर्देश भी।"
+  },
+  "walk": {
+   "title": "आज के कदमों की\nकमी पूरी करें",
+   "subtitle": "देखें कि वॉक से कितने कदम जुड़े, और जो लूप पसंद आएँ, उन्हें रख लें।"
+  },
+  "settings": {
+   "title": "अकाउंट नहीं।\nट्रैकिंग नहीं।",
+   "subtitle": "अपने घंटे और लक्ष्य सेट करें। आपके कदम कभी आपके iPhone से बाहर नहीं जाते।"
+  }
+ },
+ "hr": {
+  "home": {
+   "title": "Zna kad ste\npredugo sjedili",
+   "subtitle": "Kroky očitava vaše korake i čeka suho vrijeme."
+  },
+  "nudge": {
+   "title": "Podsjetnik u\npravom trenutku",
+   "subtitle": "Samo u satima koje odaberete i samo kad je suho. Može preskočiti i sastanke."
+  },
+  "route": {
+   "title": "Šetnja po mjeri\nvašeg cilja",
+   "subtitle": "Krug kroz obližnje parkove koji počinje i završava ondje gdje ste."
+  },
+  "guide": {
+   "title": "Svaki zavoj\nu aplikaciji Kroky",
+   "subtitle": "Pratite krug na karti uživo, uz glasovne upute ako želite."
+  },
+  "walk": {
+   "title": "Nadoknadite što\ndanas nedostaje",
+   "subtitle": "Pogledajte što je šetnja donijela i zadržite krugove koji vam se sviđaju."
+  },
+  "settings": {
+   "title": "Bez računa.\nBez praćenja.",
+   "subtitle": "Postavite sate i cilj. Vaši koraci nikad ne napuštaju vaš iPhone."
+  }
+ },
+ "hu": {
+  "home": {
+   "title": "Tudja, ha túl\nsokáig ült",
+   "subtitle": "A Kroky ismeri a lépéseit, és kivárja a száraz időt."
+  },
+  "nudge": {
+   "title": "Egy jelzés,\npont jókor",
+   "subtitle": "Csak a megadott órákban, és csak ha száraz az idő. A megbeszéléseket is kihagyhatja."
+  },
+  "route": {
+   "title": "Lépéscéljához\nszabott séta",
+   "subtitle": "Kör a közeli parkokon át, amely ott kezdődik és ér véget, ahol Ön van."
+  },
+  "guide": {
+   "title": "Minden kanyar\nott a Krokyban",
+   "subtitle": "Kövesse a kört élő térképen, ha kéri, hangos útmutatással."
+  },
+  "walk": {
+   "title": "Pótolja a mai\nhiányzó lépéseket",
+   "subtitle": "Nézze meg, mennyit adott hozzá a séta, és tartsa meg a kedvelt köröket."
+  },
+  "settings": {
+   "title": "Nincs fiók.\nNincs követés.",
+   "subtitle": "Állítsa be az órákat és a célt. A lépései sosem hagyják el az iPhone-ját."
+  }
+ },
+ "id": {
+  "home": {
+   "title": "Tahu saat Anda\nkelamaan duduk",
+   "subtitle": "Kroky membaca langkah Anda dan menunggu cuaca tidak hujan."
+  },
+  "nudge": {
+   "title": "Ajakan jalan di\nsaat yang tepat",
+   "subtitle": "Hanya di jam Anda dan saat tidak hujan. Bisa juga melewati jam rapat Anda."
+  },
+  "route": {
+   "title": "Jalan kaki sesuai\ntarget langkah",
+   "subtitle": "Rute keliling lewat taman terdekat, mulai dan selesai di tempat Anda berada."
+  },
+  "guide": {
+   "title": "Setiap belokan,\nlangsung di Kroky",
+   "subtitle": "Ikuti rute di peta langsung, dengan petunjuk suara jika Anda mau."
+  },
+  "walk": {
+   "title": "Kejar target\nlangkah hari ini",
+   "subtitle": "Lihat tambahan langkah dari jalan kaki Anda, dan simpan rute yang Anda suka."
+  },
+  "settings": {
+   "title": "Tanpa akun.\nTanpa pelacakan.",
+   "subtitle": "Atur jam dan target Anda. Langkah Anda tak pernah keluar dari iPhone."
+  }
+ },
+ "it": {
+  "home": {
+   "title": "Sa quando sei\nseduto da troppo",
+   "subtitle": "Kroky legge i tuoi passi e aspetta che non piova."
+  },
+  "nudge": {
+   "title": "Un avviso al\nmomento giusto",
+   "subtitle": "Solo nei tuoi orari e solo quando è asciutto. Può anche saltare le riunioni."
+  },
+  "route": {
+   "title": "Un giro adatto\nal tuo obiettivo",
+   "subtitle": "Un giro tra i parchi vicini che parte e finisce dove sei tu."
+  },
+  "guide": {
+   "title": "Ogni svolta,\nproprio in Kroky",
+   "subtitle": "Segui il giro su una mappa dal vivo, con indicazioni vocali se vuoi."
+  },
+  "walk": {
+   "title": "Colma il divario\ndi passi di oggi",
+   "subtitle": "Guarda cosa ha aggiunto la camminata e tieni i giri che ti piacciono."
+  },
+  "settings": {
+   "title": "Senza account.\nSenza tracciamento",
+   "subtitle": "Imposta orari e obiettivo. I tuoi passi non lasciano mai il tuo iPhone."
+  }
+ },
+ "ja": {
+  "home": {
+   "title": "座りすぎに\n気づきます",
+   "subtitle": "Krokyが歩数を読み取り、雨の降らないタイミングを待ちます。"
+  },
+  "nudge": {
+   "title": "ちょうどいい時に\nお知らせ",
+   "subtitle": "設定した時間帯の、雨が降っていないときだけ。会議中は控えることもできます。"
+  },
+  "route": {
+   "title": "歩数の目標に\n合わせた散歩",
+   "subtitle": "近くの公園をめぐって、今いる場所に戻ってくるループです。"
+  },
+  "guide": {
+   "title": "曲がり角も\nKrokyが案内",
+   "subtitle": "ライブマップでループをたどれます。お好みで音声案内も。"
+  },
+  "walk": {
+   "title": "足りない歩数を\n今日のうちに",
+   "subtitle": "散歩で増えた歩数を確認して、気に入ったループは保存できます。"
+  },
+  "settings": {
+   "title": "アカウント不要。\n追跡もなし。",
+   "subtitle": "時間帯と目標を設定するだけ。歩数がiPhoneの外に出ることはありません。"
+  }
+ },
+ "kn": {
+  "home": {
+   "title": "ಹೆಚ್ಚು ಕುಳಿತರೆ\nKroky ಗಮನಿಸುತ್ತದೆ",
+   "subtitle": "Kroky ನಿಮ್ಮ ಹೆಜ್ಜೆಗಳನ್ನು ನೋಡುತ್ತದೆ ಮತ್ತು ಮಳೆ ಇಲ್ಲದ ಹವಾಮಾನಕ್ಕೆ ಕಾಯುತ್ತದೆ."
+  },
+  "nudge": {
+   "title": "ಸರಿಯಾದ ಕ್ಷಣದಲ್ಲಿ\nಒಂದು ಜ್ಞಾಪನೆ",
+   "subtitle": "ನಿಮ್ಮ ಸಮಯದಲ್ಲಿ ಮಾತ್ರ, ಮಳೆ ಇಲ್ಲದಾಗ ಮಾತ್ರ. ನಿಮ್ಮ ಮೀಟಿಂಗ್‌ಗಳನ್ನೂ ಬಿಟ್ಟುಬಿಡಬಹುದು."
+  },
+  "route": {
+   "title": "ಹೆಜ್ಜೆ ಗುರಿಗೆ\nತಕ್ಕ ನಡಿಗೆ",
+   "subtitle": "ಹತ್ತಿರದ ಉದ್ಯಾನಗಳ ಮೂಲಕ ಒಂದು ಲೂಪ್, ನೀವು ಇರುವಲ್ಲೇ ಆರಂಭವಾಗಿ ಅಲ್ಲೇ ಮುಗಿಯುತ್ತದೆ."
+  },
+  "guide": {
+   "title": "ಪ್ರತಿ ತಿರುವು,\nKroky ಒಳಗೇ",
+   "subtitle": "ಲೈವ್ ನಕ್ಷೆಯಲ್ಲಿ ಲೂಪ್ ಅನುಸರಿಸಿ, ಬೇಕಿದ್ದರೆ ಧ್ವನಿ ನಿರ್ದೇಶನಗಳೊಂದಿಗೆ."
+  },
+  "walk": {
+   "title": "ಇಂದಿನ ಹೆಜ್ಜೆ\nಗುರಿ ತಲುಪಿ",
+   "subtitle": "ನಡಿಗೆ ಎಷ್ಟು ಸೇರಿಸಿತು ಎಂದು ನೋಡಿ, ಇಷ್ಟವಾದ ಲೂಪ್‌ಗಳನ್ನು ಇರಿಸಿಕೊಳ್ಳಿ."
+  },
+  "settings": {
+   "title": "ಖಾತೆ ಇಲ್ಲ.\nಟ್ರ್ಯಾಕಿಂಗ್ ಇಲ್ಲ.",
+   "subtitle": "ನಿಮ್ಮ ಸಮಯ ಮತ್ತು ಗುರಿ ಹೊಂದಿಸಿ. ನಿಮ್ಮ ಹೆಜ್ಜೆಗಳು ನಿಮ್ಮ iPhone ಬಿಟ್ಟು ಎಲ್ಲಿಗೂ ಹೋಗುವುದಿಲ್ಲ."
+  }
+ },
+ "ko": {
+  "home": {
+   "title": "오래 앉아 있으면\n알아차려요",
+   "subtitle": "Kroky가 걸음 수를 확인하고 비가 오지 않을 때를 기다려요."
+  },
+  "nudge": {
+   "title": "딱 맞는 순간에\n걷기 알림",
+   "subtitle": "정해 둔 시간대에, 비가 오지 않을 때만 알려요. 회의 중에는 건너뛸 수도 있어요."
+  },
+  "route": {
+   "title": "걸음 목표에\n딱 맞춘 산책",
+   "subtitle": "지금 있는 곳에서 출발해 다시 돌아오는, 근처 공원을 지나는 코스예요."
+  },
+  "guide": {
+   "title": "길 안내도\nKroky에서 바로",
+   "subtitle": "실시간 지도에서 코스를 따라가세요. 원하면 음성 안내도 들을 수 있어요."
+  },
+  "walk": {
+   "title": "오늘 남은 걸음,\n채워 보세요",
+   "subtitle": "산책으로 늘어난 걸음 수를 확인하고, 마음에 드는 코스는 저장하세요."
+  },
+  "settings": {
+   "title": "계정 없이.\n추적 없이.",
+   "subtitle": "시간대와 목표만 정하세요. 걸음 수는 iPhone 밖으로 나가지 않아요."
+  }
+ },
+ "ml": {
+  "home": {
+   "title": "ഏറെ നേരം ഇരുന്നാൽ\nKroky അറിയും",
+   "subtitle": "Kroky നിങ്ങളുടെ ചുവടുകൾ നോക്കുന്നു, മഴയില്ലാത്ത സമയത്തിനായി കാത്തിരിക്കുന്നു."
+  },
+  "nudge": {
+   "title": "ശരിയായ നേരത്ത്\nഒരു ഓർമ്മപ്പെടുത്തൽ",
+   "subtitle": "നിങ്ങളുടെ സമയങ്ങളിൽ മാത്രം, മഴയില്ലാത്തപ്പോൾ മാത്രം. മീറ്റിംഗുകളും ഒഴിവാക്കാം."
+  },
+  "route": {
+   "title": "ചുവട് ലക്ഷ്യത്തിന്\nഒത്ത നടത്തം",
+   "subtitle": "അടുത്തുള്ള പാർക്കുകളിലൂടെ ഒരു ലൂപ്പ്, നിങ്ങൾ ഉള്ളിടത്ത് തുടങ്ങി അവിടെ അവസാനിക്കുന്നു."
+  },
+  "guide": {
+   "title": "ഓരോ തിരിവും,\nKroky-യിൽ തന്നെ",
+   "subtitle": "ലൈവ് മാപ്പിൽ ലൂപ്പ് പിന്തുടരുക, വേണമെങ്കിൽ ശബ്‌ദ നിർദ്ദേശങ്ങളോടെ."
+  },
+  "walk": {
+   "title": "ഇന്നത്തെ ചുവട്\nലക്ഷ്യം തികയ്ക്കൂ",
+   "subtitle": "നടത്തം എത്ര ചേർത്തുവെന്ന് കാണുക, ഇഷ്ടപ്പെട്ട ലൂപ്പുകൾ സൂക്ഷിക്കുക."
+  },
+  "settings": {
+   "title": "അക്കൗണ്ട് ഇല്ല.\nട്രാക്കിംഗ് ഇല്ല.",
+   "subtitle": "നിങ്ങളുടെ സമയവും ലക്ഷ്യവും സജ്ജമാക്കുക. നിങ്ങളുടെ ചുവടുകൾ ഒരിക്കലും iPhone വിട്ടുപോകില്ല."
+  }
+ },
+ "mr": {
+  "home": {
+   "title": "खूप वेळ बसलात?\nKroky ला कळते",
+   "subtitle": "Kroky तुमची पावले पाहते आणि कोरड्या हवामानाची वाट पाहते."
+  },
+  "nudge": {
+   "title": "योग्य क्षणी\nएक इशारा",
+   "subtitle": "फक्त तुमच्या वेळेत आणि फक्त कोरडे असताना. तुमच्या मीटिंगही वगळू शकते."
+  },
+  "route": {
+   "title": "पावलांच्या ध्येयाला\nसाजेसा वॉक",
+   "subtitle": "जवळच्या उद्यानांमधून जाणारा लूप, जो तुम्ही जिथे आहात तिथेच सुरू होऊन संपतो."
+  },
+  "guide": {
+   "title": "प्रत्येक वळण,\nKroky मध्येच",
+   "subtitle": "लाइव्ह नकाशावर लूप फॉलो करा, हवे तर आवाजी दिशानिर्देशांसह."
+  },
+  "walk": {
+   "title": "आजची पावलांची\nतूट भरा",
+   "subtitle": "वॉकने किती भर पडली ते पाहा आणि आवडलेले लूप ठेवा."
+  },
+  "settings": {
+   "title": "खाते नाही.\nट्रॅकिंग नाही.",
+   "subtitle": "तुमची वेळ आणि ध्येय सेट करा. तुमची पावले कधीही तुमच्या iPhone बाहेर जात नाहीत."
+  }
+ },
+ "ms": {
+  "home": {
+   "title": "Tahu bila anda\nduduk terlalu lama",
+   "subtitle": "Kroky membaca langkah anda dan menunggu cuaca tidak hujan."
+  },
+  "nudge": {
+   "title": "Cuitan pada\nmasa yang tepat",
+   "subtitle": "Hanya dalam waktu anda dan ketika tidak hujan. Ia juga boleh langkau mesyuarat anda."
+  },
+  "route": {
+   "title": "Jalan kaki ikut\nsasaran langkah",
+   "subtitle": "Pusingan melalui taman berdekatan, bermula dan berakhir di tempat anda berada."
+  },
+  "guide": {
+   "title": "Setiap belokan,\nterus dalam Kroky",
+   "subtitle": "Ikut pusingan pada peta langsung, dengan arah suara jika anda mahu."
+  },
+  "walk": {
+   "title": "Capai sasaran\nlangkah hari ini",
+   "subtitle": "Lihat langkah yang ditambah oleh jalan kaki, dan simpan pusingan yang anda suka."
+  },
+  "settings": {
+   "title": "Tiada akaun.\nTiada penjejakan.",
+   "subtitle": "Tetapkan waktu dan sasaran anda. Langkah anda tidak pernah keluar dari iPhone."
+  }
+ },
+ "nb": {
+  "home": {
+   "title": "Vet når du har\nsittet for lenge",
+   "subtitle": "Kroky leser skrittene dine og venter på tørt vær."
+  },
+  "nudge": {
+   "title": "En påminnelse\ntil rett tid",
+   "subtitle": "Bare i timene du velger, og bare når det er tørt. Den kan også hoppe over møter."
+  },
+  "route": {
+   "title": "En tur som passer\nskrittmålet ditt",
+   "subtitle": "En rundtur gjennom parker i nærheten som starter og slutter der du er."
+  },
+  "guide": {
+   "title": "Hver sving,\nrett i Kroky",
+   "subtitle": "Følg rundturen på et live-kart, med taleveiledning om du vil."
+  },
+  "walk": {
+   "title": "Ta igjen dagens\nmanglende skritt",
+   "subtitle": "Se hva turen ga, og behold rundturene du liker."
+  },
+  "settings": {
+   "title": "Ingen konto.\nIngen sporing.",
+   "subtitle": "Velg timer og mål. Skrittene dine forlater aldri iPhonen din."
+  }
+ },
+ "nl": {
+  "home": {
+   "title": "Weet wanneer je\nte lang zit",
+   "subtitle": "Kroky leest je stappen en wacht op droog weer."
+  },
+  "nudge": {
+   "title": "Een seintje op\nhet juiste moment",
+   "subtitle": "Alleen binnen je uren en als het droog is. Desgewenst niet tijdens meetings."
+  },
+  "route": {
+   "title": "Een wandeling op\nmaat van je doel",
+   "subtitle": "Een rondje door parken in de buurt dat begint en eindigt waar je bent."
+  },
+  "guide": {
+   "title": "Elke afslag,\ngewoon in Kroky",
+   "subtitle": "Volg het rondje op een live kaart, met gesproken aanwijzingen als je wilt."
+  },
+  "walk": {
+   "title": "Haal vandaag\nje stappendoel",
+   "subtitle": "Zie wat de wandeling opleverde en bewaar de rondjes die je leuk vindt."
+  },
+  "settings": {
+   "title": "Geen account.\nGeen tracking.",
+   "subtitle": "Stel je uren en doel in. Je stappen verlaten nooit je iPhone."
+  }
+ },
+ "or": {
+  "home": {
+   "title": "ବହୁତ ସମୟ ବସିଲେ\nKroky ଜାଣିପାରେ",
+   "subtitle": "Kroky ଆପଣଙ୍କ ପାହୁଣ୍ଡ ଦେଖେ ଏବଂ ଶୁଖିଲା ପାଗକୁ ଅପେକ୍ଷା କରେ।"
+  },
+  "nudge": {
+   "title": "ଠିକ୍ ସମୟରେ\nଗୋଟିଏ ଇସାରା",
+   "subtitle": "କେବଳ ଆପଣଙ୍କ ସମୟରେ, ଆଉ କେବଳ ପାଗ ଶୁଖିଲା ଥିଲେ। ଆପଣଙ୍କ ମିଟିଂ ସମୟକୁ ମଧ୍ୟ ଏଡ଼ାଇପାରେ।"
+  },
+  "route": {
+   "title": "ପାହୁଣ୍ଡ ଲକ୍ଷ୍ୟ\nଅନୁସାରେ ଚାଲିବା",
+   "subtitle": "ପାଖ ପାର୍କ ଦେଇ ଏକ ଚକ୍କର, ଯାହା ଆପଣ ଯେଉଁଠି ଅଛନ୍ତି ସେଠାରୁ ଆରମ୍ଭ ହୋଇ ସେଠାରେ ଶେଷ ହୁଏ।"
+  },
+  "guide": {
+   "title": "ପ୍ରତିଟି ମୋଡ଼,\nKroky ଭିତରେ",
+   "subtitle": "ଲାଇଭ୍ ମାନଚିତ୍ରରେ ଚକ୍କରଟି ଅନୁସରଣ କରନ୍ତୁ, ଚାହିଁଲେ କଥିତ ଦିଗନିର୍ଦ୍ଦେଶ ସହ।"
+  },
+  "walk": {
+   "title": "ଆଜିର ବାକି ପାହୁଣ୍ଡ\nପୂରଣ କରନ୍ତୁ",
+   "subtitle": "ଚାଲିବାରେ କେତେ ଯୋଗ ହେଲା ଦେଖନ୍ତୁ, ଆଉ ପସନ୍ଦର ଚକ୍କରଗୁଡ଼ିକ ରଖନ୍ତୁ।"
+  },
+  "settings": {
+   "title": "ଆକାଉଣ୍ଟ ନାହିଁ।\nଟ୍ରାକିଂ ନାହିଁ।",
+   "subtitle": "ଆପଣଙ୍କ ସମୟ ଓ ଲକ୍ଷ୍ୟ ସେଟ୍ କରନ୍ତୁ। ଆପଣଙ୍କ ପାହୁଣ୍ଡ କେବେ ବି ଆପଣଙ୍କ iPhone ଛାଡ଼ି ଯାଏ ନାହିଁ।"
+  }
+ },
+ "pa": {
+  "home": {
+   "title": "ਬਹੁਤ ਦੇਰ ਬੈਠੇ?\nKroky ਨੂੰ ਪਤਾ ਹੈ",
+   "subtitle": "Kroky ਤੁਹਾਡੇ ਕਦਮ ਦੇਖਦਾ ਹੈ ਅਤੇ ਖੁਸ਼ਕ ਮੌਸਮ ਦੀ ਉਡੀਕ ਕਰਦਾ ਹੈ।"
+  },
+  "nudge": {
+   "title": "ਸਹੀ ਵੇਲੇ\nਇੱਕ ਹਲੂਣਾ",
+   "subtitle": "ਸਿਰਫ਼ ਤੁਹਾਡੇ ਘੰਟਿਆਂ ਵਿੱਚ, ਅਤੇ ਸਿਰਫ਼ ਜਦੋਂ ਮੌਸਮ ਖੁਸ਼ਕ ਹੋਵੇ। ਮੀਟਿੰਗਾਂ ਵੇਲੇ ਚੁੱਪ ਵੀ ਰਹਿ ਸਕਦਾ ਹੈ।"
+  },
+  "route": {
+   "title": "ਕਦਮਾਂ ਦੇ ਟੀਚੇ\nਮੁਤਾਬਕ ਸੈਰ",
+   "subtitle": "ਨੇੜਲੇ ਪਾਰਕਾਂ ਵਿੱਚੋਂ ਇੱਕ ਚੱਕਰ, ਜੋ ਤੁਸੀਂ ਜਿੱਥੇ ਹੋ ਉੱਥੋਂ ਸ਼ੁਰੂ ਹੋ ਕੇ ਉੱਥੇ ਹੀ ਮੁੱਕਦਾ ਹੈ।"
+  },
+  "guide": {
+   "title": "ਹਰ ਮੋੜ,\nKroky ਵਿੱਚ ਹੀ",
+   "subtitle": "ਲਾਈਵ ਨਕਸ਼ੇ ’ਤੇ ਚੱਕਰ ਦੇ ਨਾਲ ਚੱਲੋ, ਚਾਹੋ ਤਾਂ ਬੋਲ ਕੇ ਦਿਸ਼ਾ-ਨਿਰਦੇਸ਼ਾਂ ਨਾਲ।"
+  },
+  "walk": {
+   "title": "ਅੱਜ ਦੇ ਕਦਮਾਂ ਦੀ\nਘਾਟ ਪੂਰੀ ਕਰੋ",
+   "subtitle": "ਦੇਖੋ ਸੈਰ ਨੇ ਕਿੰਨੇ ਕਦਮ ਜੋੜੇ, ਅਤੇ ਪਸੰਦੀਦਾ ਚੱਕਰ ਰੱਖ ਲਓ।"
+  },
+  "settings": {
+   "title": "ਕੋਈ ਖਾਤਾ ਨਹੀਂ।\nਕੋਈ ਟਰੈਕਿੰਗ ਨਹੀਂ।",
+   "subtitle": "ਆਪਣੇ ਘੰਟੇ ਅਤੇ ਟੀਚਾ ਸੈੱਟ ਕਰੋ। ਤੁਹਾਡੇ ਕਦਮ ਕਦੇ ਵੀ ਤੁਹਾਡੇ iPhone ਤੋਂ ਬਾਹਰ ਨਹੀਂ ਜਾਂਦੇ।"
+  }
+ },
+ "pl": {
+  "home": {
+   "title": "Wie, kiedy\nsiedzisz za długo",
+   "subtitle": "Kroky sprawdza twoje kroki i czeka na pogodę bez deszczu."
+  },
+  "nudge": {
+   "title": "Przypomnienie\nw dobrej chwili",
+   "subtitle": "Tylko w wybranych godzinach i tylko, gdy nie pada. Może też pomijać spotkania."
+  },
+  "route": {
+   "title": "Spacer na miarę\ncelu kroków",
+   "subtitle": "Pętla przez pobliskie parki, która zaczyna się i kończy tam, gdzie jesteś."
+  },
+  "guide": {
+   "title": "Każdy zakręt\nprosto w Kroky",
+   "subtitle": "Idź pętlą na mapie na żywo, a jeśli chcesz, ze wskazówkami głosowymi."
+  },
+  "walk": {
+   "title": "Uzupełnij dziś\nbrakujące kroki",
+   "subtitle": "Zobacz, ile dał spacer, i zachowaj pętle, które ci się podobają."
+  },
+  "settings": {
+   "title": "Bez konta.\nBez śledzenia.",
+   "subtitle": "Ustaw swoje godziny i cel. Twoje kroki nigdy nie opuszczają iPhone’a."
+  }
+ },
+ "pt-BR": {
+  "home": {
+   "title": "Sabe quando você\nfica muito sentado",
+   "subtitle": "O Kroky acompanha seus passos e espera um tempo sem chuva."
+  },
+  "nudge": {
+   "title": "Um alerta na\nhora certa",
+   "subtitle": "Só no seu horário e só quando não está chovendo. Também pode evitar suas reuniões."
+  },
+  "route": {
+   "title": "Uma caminhada na\nmedida da sua meta",
+   "subtitle": "Um circuito por parques próximos que começa e termina onde você está."
+  },
+  "guide": {
+   "title": "Cada curva,\ndireto no Kroky",
+   "subtitle": "Siga o circuito em um mapa ao vivo, com instruções por voz se quiser."
+  },
+  "walk": {
+   "title": "Complete a meta\nde passos de hoje",
+   "subtitle": "Veja o que a caminhada somou e salve os circuitos de que você gosta."
+  },
+  "settings": {
+   "title": "Sem conta.\nSem rastreamento.",
+   "subtitle": "Defina seu horário e sua meta. Seus passos nunca saem do seu iPhone."
+  }
+ },
+ "pt-PT": {
+  "home": {
+   "title": "Sabe quando está\nsentado há muito",
+   "subtitle": "O Kroky lê os seus passos e espera por tempo seco."
+  },
+  "nudge": {
+   "title": "Um alerta no\nmomento certo",
+   "subtitle": "Só no seu horário e só quando não chove. Também pode evitar as suas reuniões."
+  },
+  "route": {
+   "title": "Uma caminhada à\nmedida do objetivo",
+   "subtitle": "Um circuito por parques próximos que começa e acaba onde está."
+  },
+  "guide": {
+   "title": "Cada curva,\nno próprio Kroky",
+   "subtitle": "Siga o circuito num mapa em tempo real, com instruções por voz, se quiser."
+  },
+  "walk": {
+   "title": "Cumpra o objetivo\nde passos de hoje",
+   "subtitle": "Veja o que a caminhada acrescentou e guarde os circuitos de que gosta."
+  },
+  "settings": {
+   "title": "Sem conta.\nSem rastreio.",
+   "subtitle": "Defina o horário e o objetivo. Os seus passos nunca saem do seu iPhone."
+  }
+ },
+ "ro": {
+  "home": {
+   "title": "Știe când ați\nstat prea mult",
+   "subtitle": "Kroky vă citește pașii și așteaptă vremea uscată."
+  },
+  "nudge": {
+   "title": "Un îndemn la\nmomentul potrivit",
+   "subtitle": "Doar în orele alese și doar când e uscat afară. Poate omite și ședințele."
+  },
+  "route": {
+   "title": "O plimbare după\nobiectivul de pași",
+   "subtitle": "O buclă prin parcurile din apropiere, care pornește și se termină unde sunteți."
+  },
+  "guide": {
+   "title": "Fiecare viraj,\nchiar în Kroky",
+   "subtitle": "Urmați bucla pe o hartă live, cu indicații vocale dacă doriți."
+  },
+  "walk": {
+   "title": "Recuperați pașii\nlipsă de azi",
+   "subtitle": "Vedeți ce a adăugat plimbarea și păstrați buclele care vă plac."
+  },
+  "settings": {
+   "title": "Fără cont.\nFără urmărire.",
+   "subtitle": "Setați orele și obiectivul. Pașii nu părăsesc niciodată iPhone-ul."
+  }
+ },
+ "ru": {
+  "home": {
+   "title": "Знает, когда вы\nзасиделись",
+   "subtitle": "Kroky учитывает ваши шаги и ждёт сухой погоды."
+  },
+  "nudge": {
+   "title": "Напоминание\nв нужный момент",
+   "subtitle": "Только в ваши часы и только в сухую погоду. Может и пропускать встречи."
+  },
+  "route": {
+   "title": "Прогулка под\nвашу цель шагов",
+   "subtitle": "Круг по ближайшим паркам, который начинается и заканчивается там, где вы."
+  },
+  "guide": {
+   "title": "Каждый поворот —\nпрямо в Kroky",
+   "subtitle": "Следуйте по кругу на живой карте, с голосовыми подсказками по желанию."
+  },
+  "walk": {
+   "title": "Доберите сегодня\nостаток шагов",
+   "subtitle": "Смотрите, что добавила прогулка, и сохраняйте понравившиеся круги."
+  },
+  "settings": {
+   "title": "Без аккаунта.\nБез слежки.",
+   "subtitle": "Задайте часы и цель. Ваши шаги никогда не покидают ваш iPhone."
+  }
+ },
+ "sk": {
+  "home": {
+   "title": "Vie, kedy sedíte\npríliš dlho",
+   "subtitle": "Kroky pozná vaše kroky a čaká na suché počasie."
+  },
+  "nudge": {
+   "title": "Pripomienka\nv pravú chvíľu",
+   "subtitle": "Len v čase, ktorý si určíte, a len keď neprší. Vie vynechať aj vaše stretnutia."
+  },
+  "route": {
+   "title": "Prechádzka na\nmieru vášmu cieľu",
+   "subtitle": "Okruh parkami v okolí, ktorý začína aj končí tam, kde práve ste."
+  },
+  "guide": {
+   "title": "Každá odbočka\npriamo v Kroky",
+   "subtitle": "Choďte po okruhu podľa živej mapy, ak chcete, aj s hlasovými pokynmi."
+  },
+  "walk": {
+   "title": "Doplňte dnešné\nchýbajúce kroky",
+   "subtitle": "Pozrite sa, čo prechádzka pridala, a ponechajte si okruhy, ktoré sa vám páčia."
+  },
+  "settings": {
+   "title": "Bez účtu.\nBez sledovania.",
+   "subtitle": "Nastavte si hodiny a cieľ. Vaše kroky nikdy neopustia váš iPhone."
+  }
+ },
+ "sl": {
+  "home": {
+   "title": "Ve, kdaj ste\npredolgo sedeli",
+   "subtitle": "Kroky pozna vaše korake in počaka na suho vreme."
+  },
+  "nudge": {
+   "title": "Opomnik ob\npravem trenutku",
+   "subtitle": "Le v urah, ki jih izberete, in le, ko ne dežuje. Lahko tudi preskoči sestanke."
+  },
+  "route": {
+   "title": "Sprehod po meri\nvašega cilja",
+   "subtitle": "Krog skozi bližnje parke, ki se začne in konča tam, kjer ste."
+  },
+  "guide": {
+   "title": "Vsak zavoj,\nkar v Kroky",
+   "subtitle": "Sledite krogu na živem zemljevidu, po želji z glasovnimi navodili."
+  },
+  "walk": {
+   "title": "Dopolnite, kar\ndanes manjka",
+   "subtitle": "Poglejte, koliko je dodal sprehod, in obdržite kroge, ki so vam všeč."
+  },
+  "settings": {
+   "title": "Brez računa.\nBrez sledenja.",
+   "subtitle": "Nastavite ure in cilj. Vaši koraki nikoli ne zapustijo vašega iPhona."
+  }
+ },
+ "sv": {
+  "home": {
+   "title": "Vet när du har\nsuttit för länge",
+   "subtitle": "Kroky läser av dina steg och väntar på uppehåll."
+  },
+  "nudge": {
+   "title": "En knuff i\nrätt ögonblick",
+   "subtitle": "Bara inom dina tider och bara vid uppehåll. Kroky kan också hoppa över dina möten."
+  },
+  "route": {
+   "title": "En promenad efter\nditt stegmål",
+   "subtitle": "En runda genom parker i närheten som börjar och slutar där du är."
+  },
+  "guide": {
+   "title": "Varje sväng,\ndirekt i Kroky",
+   "subtitle": "Följ rundan på en livekarta, med talad vägledning om du vill."
+  },
+  "walk": {
+   "title": "Nå dagens\nstegmål",
+   "subtitle": "Se vad promenaden gav och behåll rundorna du gillar."
+  },
+  "settings": {
+   "title": "Inget konto.\nIngen spårning.",
+   "subtitle": "Ställ in tider och mål. Dina steg lämnar aldrig din iPhone."
+  }
+ },
+ "ta": {
+  "home": {
+   "title": "அதிகம் அமர்ந்தால்\nKroky அறியும்",
+   "subtitle": "Kroky உங்கள் அடிகளைப் பார்த்து, மழை இல்லாத நேரத்துக்குக் காத்திருக்கும்."
+  },
+  "nudge": {
+   "title": "சரியான நேரத்தில்\nஒரு நினைவூட்டல்",
+   "subtitle": "உங்கள் நேரங்களில் மட்டும், மழை இல்லாதபோது மட்டும். உங்கள் சந்திப்புகளையும் தவிர்க்கலாம்."
+  },
+  "route": {
+   "title": "அடி இலக்குக்கு\nஏற்ற நடை",
+   "subtitle": "அருகிலுள்ள பூங்காக்கள் வழியே ஒரு சுற்று, நீங்கள் இருக்கும் இடத்திலேயே தொடங்கி அங்கேயே முடியும்."
+  },
+  "guide": {
+   "title": "ஒவ்வொரு திருப்பமும்,\nKroky-யிலேயே",
+   "subtitle": "நேரலை வரைபடத்தில் சுற்றைப் பின்தொடருங்கள், விரும்பினால் குரல் வழிகாட்டலுடன்."
+  },
+  "walk": {
+   "title": "இன்றைய அடி\nஇலக்கை எட்டுங்கள்",
+   "subtitle": "நடை எவ்வளவு சேர்த்தது என்று பாருங்கள், பிடித்த சுற்றுகளைச் சேமியுங்கள்."
+  },
+  "settings": {
+   "title": "கணக்கு இல்லை.\nகண்காணிப்பு இல்லை.",
+   "subtitle": "உங்கள் நேரங்களையும் இலக்கையும் அமையுங்கள். உங்கள் அடிகள் ஒருபோதும் iPhone-ஐ விட்டு வெளியேறாது."
+  }
+ },
+ "te": {
+  "home": {
+   "title": "ఎక్కువసేపు కూర్చుంటే\nKroky గమనిస్తుంది",
+   "subtitle": "Kroky మీ అడుగులను చూసి, వర్షం లేని సమయం కోసం వేచి ఉంటుంది."
+  },
+  "nudge": {
+   "title": "సరైన సమయంలో\nఒక రిమైండర్",
+   "subtitle": "మీ గంటల్లో మాత్రమే, వర్షం లేనప్పుడు మాత్రమే. మీ మీటింగ్‌లను కూడా దాటవేయగలదు."
+  },
+  "route": {
+   "title": "అడుగుల లక్ష్యానికి\nతగిన నడక",
+   "subtitle": "దగ్గరలోని పార్క్‌ల గుండా ఒక లూప్, మీరు ఉన్న చోటే మొదలై అక్కడే ముగుస్తుంది."
+  },
+  "guide": {
+   "title": "ప్రతి మలుపు,\nKroky లోనే",
+   "subtitle": "లైవ్ మ్యాప్‌లో లూప్‌ను అనుసరించండి, కావాలంటే వాయిస్ దిశలతో."
+  },
+  "walk": {
+   "title": "ఈరోజు అడుగుల\nలక్ష్యం చేరండి",
+   "subtitle": "నడక ఎంత జోడించిందో చూడండి, నచ్చిన లూప్‌లను ఉంచుకోండి."
+  },
+  "settings": {
+   "title": "ఖాతా లేదు.\nట్రాకింగ్ లేదు.",
+   "subtitle": "మీ గంటలు, లక్ష్యం సెట్ చేయండి. మీ అడుగులు ఎప్పుడూ మీ iPhone దాటి వెళ్లవు."
+  }
+ },
+ "th": {
+  "home": {
+   "title": "รู้ว่าคุณ\nนั่งนานเกินไป",
+   "subtitle": "Kroky อ่านจำนวนก้าวของคุณ และรอจังหวะที่ฝนไม่ตก"
+  },
+  "nudge": {
+   "title": "สะกิดให้เดิน\nในจังหวะที่ใช่",
+   "subtitle": "เฉพาะในช่วงเวลาของคุณและตอนที่ฝนไม่ตก ข้ามช่วงประชุมให้ได้ด้วย"
+  },
+  "route": {
+   "title": "เดินพอดี\nกับเป้าหมายก้าว",
+   "subtitle": "เส้นทางวนผ่านสวนใกล้ๆ เริ่มและจบตรงที่คุณอยู่"
+  },
+  "guide": {
+   "title": "ทุกทางเลี้ยว\nบอกใน Kroky",
+   "subtitle": "เดินตามเส้นทางวนบนแผนที่สด พร้อมบอกทางด้วยเสียงถ้าต้องการ"
+  },
+  "walk": {
+   "title": "เดินให้ครบเป้า\nของวันนี้",
+   "subtitle": "ดูว่าการเดินเพิ่มก้าวไปเท่าไร และเก็บเส้นทางที่ชอบไว้"
+  },
+  "settings": {
+   "title": "ไม่ต้องมีบัญชี\nไม่มีการติดตาม",
+   "subtitle": "ตั้งช่วงเวลาและเป้าหมาย ข้อมูลก้าวของคุณไม่เคยออกจาก iPhone"
+  }
+ },
+ "tr": {
+  "home": {
+   "title": "Çok oturduğunuzu\nfark eder",
+   "subtitle": "Kroky adımlarınızı okur ve yağışsız havayı bekler."
+  },
+  "nudge": {
+   "title": "Tam zamanında\nbir dürtme",
+   "subtitle": "Yalnızca sizin saatlerinizde ve hava yağışsızken. Toplantılarınızı da atlayabilir."
+  },
+  "route": {
+   "title": "Adım hedefinize\ngöre bir yürüyüş",
+   "subtitle": "Yakındaki parklardan geçen, bulunduğunuz yerde başlayıp biten bir tur."
+  },
+  "guide": {
+   "title": "Her dönüş,\ndoğrudan Kroky'de",
+   "subtitle": "Turu canlı haritada takip edin, isterseniz sesli yol tarifiyle."
+  },
+  "walk": {
+   "title": "Bugünkü adım\naçığını kapatın",
+   "subtitle": "Yürüyüşün kattığı adımları görün, sevdiğiniz turları saklayın."
+  },
+  "settings": {
+   "title": "Hesap yok.\nTakip yok.",
+   "subtitle": "Saatlerinizi ve hedefinizi belirleyin. Adımlarınız iPhone'unuzdan asla çıkmaz."
+  }
+ },
+ "uk": {
+  "home": {
+   "title": "Знає, коли ви\nзасиділися",
+   "subtitle": "Kroky враховує ваші кроки й чекає на суху погоду."
+  },
+  "nudge": {
+   "title": "Нагадування\nв слушний момент",
+   "subtitle": "Лише у ваші години й лише в суху погоду. Може й пропускати зустрічі."
+  },
+  "route": {
+   "title": "Прогулянка під\nвашу ціль кроків",
+   "subtitle": "Коло найближчими парками, що починається й закінчується там, де ви."
+  },
+  "guide": {
+   "title": "Кожен поворот —\nпросто в Kroky",
+   "subtitle": "Проходьте коло на живій карті, з голосовими підказками за бажанням."
+  },
+  "walk": {
+   "title": "Доберіть сьогодні\nрешту кроків",
+   "subtitle": "Дивіться, що додала прогулянка, і зберігайте кола, які сподобалися."
+  },
+  "settings": {
+   "title": "Без реєстрації.\nБез стеження.",
+   "subtitle": "Задайте години й ціль. Ваші кроки ніколи не залишають ваш iPhone."
+  }
+ },
+ "ur": {
+  "home": {
+   "title": "جانتا ہے کب آپ\nبہت دیر بیٹھے",
+   "subtitle": "Kroky آپ کے قدم پڑھتا ہے اور خشک موسم کا انتظار کرتا ہے۔"
+  },
+  "nudge": {
+   "title": "صحیح وقت پر\nایک ٹہوکا",
+   "subtitle": "صرف آپ کے اوقات میں اور جب موسم خشک ہو۔ یہ آپ کی میٹنگز بھی چھوڑ سکتا ہے۔"
+  },
+  "route": {
+   "title": "آپ کے قدموں کے\nہدف جتنی واک",
+   "subtitle": "قریبی پارکوں سے گزرتا چکر، جو وہیں شروع اور ختم ہو جہاں آپ ہیں۔"
+  },
+  "guide": {
+   "title": "ہر موڑ،\nسیدھا Kroky میں",
+   "subtitle": "لائیو نقشے پر چکر کے ساتھ چلیں، چاہیں تو بولی جانے والی ہدایات کے ساتھ۔"
+  },
+  "walk": {
+   "title": "آج کے قدموں کی\nکمی پوری کریں",
+   "subtitle": "دیکھیں واک نے کتنے قدم بڑھائے، اور پسندیدہ چکر رکھ لیں۔"
+  },
+  "settings": {
+   "title": "نہ اکاؤنٹ۔\nنہ ٹریکنگ۔",
+   "subtitle": "اپنے اوقات اور ہدف طے کریں۔ آپ کے قدم کبھی آپ کے iPhone سے باہر نہیں جاتے۔"
+  }
+ },
+ "vi": {
+  "home": {
+   "title": "Biết khi bạn\nngồi quá lâu",
+   "subtitle": "Kroky đọc số bước của bạn và chờ lúc trời khô ráo."
+  },
+  "nudge": {
+   "title": "Lời nhắc vào\nđúng lúc",
+   "subtitle": "Chỉ trong khung giờ của bạn và khi trời khô ráo. Còn có thể bỏ qua cuộc họp."
+  },
+  "route": {
+   "title": "Đi bộ vừa đủ\nmục tiêu bước",
+   "subtitle": "Một vòng qua các công viên gần đó, bắt đầu và kết thúc ngay chỗ bạn đứng."
+  },
+  "guide": {
+   "title": "Từng ngã rẽ,\nngay trong Kroky",
+   "subtitle": "Đi theo vòng trên bản đồ trực tiếp, kèm chỉ đường bằng giọng nói nếu muốn."
+  },
+  "walk": {
+   "title": "Đi cho đủ bước\nhôm nay",
+   "subtitle": "Xem chuyến đi bộ đã thêm bao nhiêu bước và giữ lại những vòng bạn thích."
+  },
+  "settings": {
+   "title": "Không tài khoản.\nKhông theo dõi.",
+   "subtitle": "Đặt khung giờ và mục tiêu. Số bước của bạn không bao giờ rời khỏi iPhone."
+  }
+ },
+ "zh-Hans": {
+  "home": {
+   "title": "坐得太久？\nKroky 知道",
+   "subtitle": "Kroky 读取你的步数，并等待无雨的时段。"
+  },
+  "nudge": {
+   "title": "在恰当的时刻\n提醒你",
+   "subtitle": "只在你设定的时段、且无雨时提醒。还能避开你的会议。"
+  },
+  "route": {
+   "title": "按步数目标\n定制的散步",
+   "subtitle": "穿过附近公园的环线，从你所在的地方出发，再回到这里。"
+  },
+  "guide": {
+   "title": "每个转弯\n都在 Kroky 里",
+   "subtitle": "在实时地图上沿环线前行，需要的话还有语音导航。"
+  },
+  "walk": {
+   "title": "补足今天\n还差的步数",
+   "subtitle": "看看这次散步增加了多少步，喜欢的环线可以保留。"
+  },
+  "settings": {
+   "title": "无需账户。\n不做追踪。",
+   "subtitle": "设置时段和目标即可。你的步数绝不会离开你的 iPhone。"
+  }
+ },
+ "zh-Hant": {
+  "home": {
+   "title": "坐太久了？\nKroky 知道",
+   "subtitle": "Kroky 讀取你的步數，並等待不下雨的時段。"
+  },
+  "nudge": {
+   "title": "在剛好的時機\n提醒你",
+   "subtitle": "只在你設定的時段、而且沒下雨時提醒。還能避開你的會議。"
+  },
+  "route": {
+   "title": "依步數目標\n量身打造的散步",
+   "subtitle": "穿過附近公園的環線，從你所在的地方出發，再回到原地。"
+  },
+  "guide": {
+   "title": "每個轉彎\n都在 Kroky 裡",
+   "subtitle": "在即時地圖上沿著環線走，想要的話還有語音導航。"
+  },
+  "walk": {
+   "title": "補足今天\n還差的步數",
+   "subtitle": "看看這趟散步多走了幾步，喜歡的環線可以保留。"
+  },
+  "settings": {
+   "title": "不需帳號。\n不做追蹤。",
+   "subtitle": "設定時段和目標就好。你的步數絕不會離開你的 iPhone。"
+  }
+ }
+}
