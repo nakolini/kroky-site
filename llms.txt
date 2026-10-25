@@ -5,9 +5,9 @@
 ## Pages
 
 - [Kroky for iPhone](https://kroky.nakolini.com/): what it does, how it works, free vs Kroky Pro, privacy, FAQ
-- [An app that reminds you to walk when you've sat too long](https://kroky.nakolini.com/guides/walk-reminder/): Kroky is an iPhone app that reads your steps from Apple Health, notices a long stretch without them and, when it's dry outside, nudges you with a walk that's ready to go: a loop from where you are, sized to close the gap to today's step goal.
-- [How long do I need to walk to reach my step goal?](https://kroky.nakolini.com/guides/how-long-to-walk-for-step-goal/): At an easy walking pace of about 100 steps a minute, 1,000 steps take about 10 minutes and cover about 750 m (0.5 mi). So 3,000 steps left is a walk of about 30 minutes and 2.2 km (1.4 mi).
-- [How to find a walking loop near you that starts and ends at your door](https://kroky.nakolini.com/guides/walking-loop-near-me/): Open Kroky and tap Walk Now: it plans a loop that starts and ends where you are, goes through nearby parks and quiet streets where it can, comes back a different way when the streets allow, and is as long as the steps or minutes you want.
+- [An app that reminds you to get up and walk when you've been sitting too long](https://kroky.nakolini.com/guides/walk-reminder/): Kroky is an iPhone app that reads your steps from Apple Health, notices a long stretch without them and, when it's dry outside, nudges you with a walk that's ready to go: a loop from where you are, sized to close the gap to today's step goal.
+- [How long do I need to walk to reach my step goal?](https://kroky.nakolini.com/guides/how-long-to-walk-for-step-goal/): At an easy walking pace of about 100 steps a minute, 1,000 steps take about 10 minutes and cover about 750 m (0.5 mi). So 3,000 steps left is a walk of about 30 minutes and 2.3 km (1.4 mi).
+- [How to find a walking loop near you that starts and ends at your door](https://kroky.nakolini.com/guides/walking-loop-near-me/): Open Kroky and tap Walk Now: it plans a loop that starts and ends where you are, goes through nearby parks and quiet streets where it can, comes back a different way when the streets allow, and fits the steps or minutes you want.
 - [Support](https://kroky.nakolini.com/support.html): Apple Health access, nudges, restoring and cancelling Kroky Pro, contact
 - [Privacy Policy](https://kroky.nakolini.com/privacy-policy.html): collects nothing; what goes to Apple and OpenStreetMap
 - [Terms of Use](https://kroky.nakolini.com/terms.html): Apple's standard EULA plus walking safety, Kroky Pro billing, map data
@@ -33,15 +33,15 @@ Kroky: Walk Breaks is an iPhone app for people who sit a lot. It notices when yo
 
 ### Is there an app that reminds me to take a walk when I've been sitting too long?
 
-Yes. Kroky reads your steps from Apple Health and, after a long stretch without steps, sends a nudge with a walk ready to go. You choose the hours, the days and how long a sit counts as too long; the default is 90 minutes, between 9:00 and 18:00 on weekdays. It sends at most two nudges a day and only when it's dry. Sitting nudges are part of Kroky Pro.
+Yes. Kroky reads your steps from Apple Health and, after a long stretch without steps, sends a nudge with a walk ready to go. You choose the hours, the days and how long a sit counts as too long; the default is 90 minutes, from 9 AM to 6 PM on weekdays. It sends at most two nudges a day and only when it's dry. Sitting nudges are part of Kroky Pro.
 
 ### Which app plans a walking route to reach my daily step goal?
 
 Kroky does. It takes the steps you still need today, turns them into a distance with your own stride, and plans a loop that starts and ends where you are and is just that long. You can also pick a 15, 30, 45 or 60-minute walk instead.
 
-### Can Kroky find a walking loop near me that avoids main roads?
+### Can Kroky find a walking loop near me that avoids busy roads?
 
-It tries to. Kroky looks for parks and footpaths around you with Apple Maps and OpenStreetMap, plans the loop through them and keeps off busy streets where the map allows. If you don't like a stretch, mark it and future loops will avoid it.
+It tries to. Kroky looks for parks and walking paths around you with Apple Maps and OpenStreetMap, plans the loop through them and keeps off busy streets where the map allows. If you don't like a stretch, mark it and future loops will avoid it.
 
 ### Does Kroky check the weather before suggesting a walk?
 
@@ -57,7 +57,7 @@ No. There is no sign-up and no login. Open the app, allow Apple Health access an
 
 ### Does Kroky track my location?
 
-Only when you ask it to. Kroky uses your location while the app is open, to plan a loop and get the weather, and continuously only during a walk you start, from Go until you end it. It never asks for "Always" location and never tracks you outside a walk. Your routes stay on your iPhone.
+Only when you ask it to. Kroky uses your location while the app is open, to plan a loop and get the weather. It uses it continuously only during a walk you start, from Go until you end it. It never asks for "Always" location and never tracks you outside a walk. Your routes stay on your iPhone.
 
 ### Does it work with Apple Watch?
 
@@ -67,7 +67,7 @@ Kroky has no Apple Watch app, but it reads your steps from Apple Health, which c
 
 Yes. Tap Go and Kroky shows where you are on the loop, the part you've walked, and the distance and time left. Spoken directions are optional, and guidance keeps working with the screen locked. You can also open the loop in Apple Maps or Google Maps.
 
-### Is Kroky on Android or iPad?
+### Is Kroky available for Android or iPad?
 
 Not yet. Kroky is for iPhone, with iOS 17 or later.
 
@@ -75,13 +75,13 @@ Not yet. Kroky is for iPhone, with iOS 17 or later.
 
 Anywhere Apple Maps has walking directions. Loops are best where there are parks and footpaths nearby; in places with few, Kroky plans the quietest loop it can, or a walk there and back.
 
-### What languages is Kroky in?
+### What languages does Kroky support?
 
-49: English, Arabic, Bengali, Catalan, Chinese (Simplified and Traditional), Croatian, Czech, Danish, Dutch, Finnish, French (France and Canada), German, Greek, Gujarati, Hebrew, Hindi, Hungarian, Indonesian, Italian, Japanese, Kannada, Korean, Malay, Malayalam, Marathi, Norwegian, Odia, Polish, Portuguese (Brazil and Portugal), Punjabi, Romanian, Russian, Slovak, Slovenian, Spanish (Spain and Latin America), Swedish, Tamil, Telugu, Thai, Turkish, Ukrainian, Urdu and Vietnamese, with British and Australian English.
+49: English, Arabic, Bengali, Catalan, Chinese (Simplified and Traditional), Croatian, Czech, Danish, Dutch, Finnish, French (France and Canada), German, Greek, Gujarati, Hebrew, Hindi, Hungarian, Indonesian, Italian, Japanese, Kannada, Korean, Malay, Malayalam, Marathi, Norwegian, Odia, Polish, Portuguese (Brazil and Portugal), Punjabi, Romanian, Russian, Slovak, Slovenian, Spanish (Spain and Latin America), Swedish, Tamil, Telugu, Thai, Turkish, Ukrainian, Urdu and Vietnamese. English comes in US, British and Australian versions.
 
 ### What does the name Kroky mean?
 
-"Steps." It's the Ukrainian word кроки written in Latin letters, and the Czech and Slovak word as it is.
+"Steps." It's the Ukrainian word кроки written in Latin letters. In Czech and Slovak, kroky is simply the everyday word for steps.
 
 ### Who makes Kroky?
 

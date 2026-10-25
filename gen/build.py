@@ -5,7 +5,7 @@ Python 3.9+ standard library only. Run from anywhere: python3 gen/build.py
 Copy is in i18n/<lang>.json (en.json is the source), the App Store names and the screenshot captions are in data/,
 and the output is written to the repo root, which GitHub Pages serves as is.
 """
-import hashlib, html, json, os, re, shutil
+import decimal, hashlib, html, json, os, re, shutil
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 BASE_URL = "https://kroky.nakolini.com"
@@ -75,16 +75,40 @@ LANGUAGES = [
     ("zh-Hant", "zh-hant", "繁體中文"),
 ]
 RTL = {"ar", "he", "ur"}
+# Open Graph wants language_TERRITORY.
+OG_LOCALE = {"en": "en_US", "en-GB": "en_GB", "en-AU": "en_AU", "es": "es_ES", "es-419": "es_LA", "fr": "fr_FR",
+             "fr-CA": "fr_CA", "pt-BR": "pt_BR", "pt-PT": "pt_PT", "zh-Hans": "zh_CN", "zh-Hant": "zh_TW", "ar": "ar_AR",
+             "bn": "bn_IN", "ca": "ca_ES", "cs": "cs_CZ", "da": "da_DK", "de": "de_DE", "el": "el_GR", "fi": "fi_FI",
+             "gu": "gu_IN", "he": "he_IL", "hi": "hi_IN", "hr": "hr_HR", "hu": "hu_HU", "id": "id_ID", "it": "it_IT",
+             "ja": "ja_JP", "kn": "kn_IN", "ko": "ko_KR", "ml": "ml_IN", "mr": "mr_IN", "ms": "ms_MY", "nb": "nb_NO",
+             "nl": "nl_NL", "or": "or_IN", "pa": "pa_IN", "pl": "pl_PL", "ro": "ro_RO", "ru": "ru_RU", "sk": "sk_SK",
+             "sl": "sl_SI", "sv": "sv_SE", "ta": "ta_IN", "te": "te_IN", "th": "th_TH", "tr": "tr_TR", "uk": "uk_UA",
+             "ur": "ur_PK", "vi": "vi_VN"}
+# Distance units as each language writes them after a number.
+UNITS = {
+    "ja": ("m", "km"), "ko": ("m", "km"), "zh-Hans": ("\u00a0米", "\u00a0公里"), "zh-Hant": ("\u00a0公尺", "\u00a0公里"),
+    "ru": ("\u00a0м", "\u00a0км"), "uk": ("\u00a0м", "\u00a0км"), "el": ("\u00a0μ.", "\u00a0χλμ."),
+    "ar": ("\u00a0م", "\u00a0كم"), "ur": ("\u00a0میٹر", "\u00a0کلومیٹر"), "he": ("\u00a0מ׳", "\u00a0ק״מ"),
+    "hi": ("\u00a0मी", "\u00a0किमी"), "mr": ("\u00a0मी", "\u00a0किमी"), "bn": ("\u00a0মি", "\u00a0কিমি"),
+    "gu": ("\u00a0મી", "\u00a0કિમી"), "kn": ("\u00a0ಮೀ", "\u00a0ಕಿ.ಮೀ"), "ml": ("\u00a0മീ.", "\u00a0കി.മീ."),
+    "or": ("\u00a0ମି", "\u00a0କିମି"), "pa": ("\u00a0ਮੀ.", "\u00a0ਕਿ.ਮੀ."), "ta": ("\u00a0மீ", "\u00a0கிமீ"),
+    "te": ("\u00a0మీ", "\u00a0కి.మీ"), "th": ("\u00a0ม.", "\u00a0กม."),
+}
+# Languages whose copy writes numbers in their own digits.
+NATIVE_DIGITS = {"bn": str.maketrans("0123456789", "০১২৩৪৫৬৭৮৯")}
+# Languages that end a sentence with a danda.
+DANDA = {"hi", "bn", "pa", "or"}
+CJK_STOP = {"ja", "zh-Hans", "zh-Hant"}
 # Thousands and decimal separators. Spanish, Polish and European Portuguese leave four-digit numbers unseparated.
 NBSP, NNBSP = " ", " "
 DOT_GROUP = {"de", "da", "es", "id", "it", "nl", "pt-BR", "ro", "tr", "el", "hr", "sl", "ca", "vi"}
 SPACE_GROUP = {"fr": NNBSP, "fr-CA": NBSP, "cs": NBSP, "sk": NBSP, "ru": NBSP, "uk": NBSP, "pl": NBSP, "fi": NBSP,
                "nb": NBSP, "sv": NBSP, "hu": NBSP, "pt-PT": NBSP}
-NO_GROUP_UNDER_10K = {"es", "pl", "pt-PT"}
+NO_GROUP_UNDER_10K = {"es", "hu", "pl", "pt-PT", "sl"}
 SHOTS = ["route", "home", "guide", "nudge", "walk", "settings"]
 GUIDES = ["g1", "g2", "g3"]
 # Stride and pace the step table assumes: the app's defaults before it learns the walker's own (StrideCalibration).
-STRIDE_M, PACE_M_PER_MIN = 0.75, 80
+STRIDE_M, PACE_M_PER_MIN = 0.75, 75  # 100 steps a minute
 TABLE_STEPS = [1000, 2000, 3000, 4000, 5000, 8000, 10000]
 
 # Generated paths, removed before each build so stale pages never linger.
@@ -156,6 +180,8 @@ class Lang:
         return text
 
     def num(self, n, decimals=0):
+        # Halves round up (2.25 km → 2.3), as people expect, not to the even digit.
+        n = decimal.Decimal(repr(n)).quantize(decimal.Decimal(1).scaleb(-decimals), decimal.ROUND_HALF_UP)
         s = "{:,.{d}f}".format(n, d=decimals)
         group, dec = ",", "."
         if self.code in DOT_GROUP:
@@ -164,7 +190,8 @@ class Lang:
             group, dec = SPACE_GROUP[self.code], ","
         if self.code in NO_GROUP_UNDER_10K and abs(n) < 10000:
             group = ""
-        return s.replace(",", "\x00").replace(".", dec).replace("\x00", group)
+        s = s.replace(",", "\x00").replace(".", dec).replace("\x00", group)
+        return s.translate(NATIVE_DIGITS[self.code]) if self.code in NATIVE_DIGITS else s
 
 
 ALL_LANGS = [Lang(*row) for row in LANGUAGES]
@@ -305,8 +332,8 @@ def render(lang, path, title, description, body, jsonld=(), og_image=None, noind
 {footer}
 </body>
 </html>
-""".format(code=lang.code, dir=lang.dir, title=e(plain(title)), description=e(plain(description)), links=links,
-           canonical=e(canonical), og_image=e(og_image), og_locale=lang.code.replace("-", "_"), app_id=APP_ID,
+""".format(code="en-US" if lang.code == "en" else lang.code, dir=lang.dir, title=e(plain(title)), description=e(plain(description)), links=links,
+           canonical=e(canonical), og_image=e(og_image), og_locale=OG_LOCALE.get(lang.code, lang.code.replace("-", "_")), app_id=APP_ID,
            css=asset_url("assets/site.css"), jsonld="".join(jsonld_script(b) for b in jsonld),
            header=header(lang, path), body=body, footer=footer(lang))
 
@@ -372,7 +399,12 @@ def website_jsonld(lang):
 
 def phone(lang, shot, cls="phone", eager=False):
     cap = lang.captions[shot]
-    alt = "%s. %s" % (cap["title"].replace("\n", " "), cap["subtitle"])
+    title = cap["title"].replace("\n", " ").rstrip()
+    if title[-1] in ".!?。！？…؟।":
+        alt = "%s %s" % (title, cap["subtitle"])
+    else:
+        alt = ("%s。%s" if lang.code in CJK_STOP else "%s। %s" if lang.code in DANDA else "%s۔ %s" if lang.code == "ur" else "%s %s" if lang.code == "th" else "%s. %s") % (
+            title, cap["subtitle"])
     return ('<div class="%s"><img src="/assets/shots/%s/%s.webp" width="600" height="1304" alt="%s"%s></div>'
             % (cls, lang.code, shot, e(alt), "" if eager else ' loading="lazy" decoding="async"'))
 
@@ -386,8 +418,8 @@ def home_page(lang):
         '<li><figure>%s<figcaption><strong>%s</strong><span>%s</span></figcaption></figure></li>' % (
             phone(lang, s), e(lang.captions[s]["title"].replace("\n", " ")), e(lang.captions[s]["subtitle"]))
         for s in SHOTS)
-    how = "".join('<li><span class="num">%d</span><div><h3>%s</h3><p>%s</p></div></li>' % (
-        i, lang.t("how.%d_t" % i), lang.t("how.%d" % i)) for i in range(1, 5))
+    how = "".join('<li><span class="num">%s</span><div><h3>%s</h3><p>%s</p></div></li>' % (
+        lang.num(i), lang.t("how.%d_t" % i), lang.t("how.%d" % i)) for i in range(1, 5))
     feature_icons = ["sit", "sun", "loop", "map", "star", "chart", "calendar", "globe"]
     features = "".join('<li class="card">%s<h3>%s</h3><p>%s</p></li>' % (
         icon(feature_icons[i - 1]), lang.t("features.%d_t" % i), lang.t("features.%d" % i)) for i in range(1, 9))
@@ -480,8 +512,9 @@ def step_table(lang):
     for steps in TABLE_STEPS:
         meters = steps * STRIDE_M
         minutes = round(meters / PACE_M_PER_MIN)
-        dist = "%s km" % lang.num(meters / 1000, 1)
-        if lang.english:
+        m_unit, km_unit = UNITS.get(lang.code, ("\u00a0m", "\u00a0km"))
+        dist = lang.num(round(meters)) + m_unit if meters < 1000 else lang.num(meters / 1000, 1) + km_unit
+        if lang.code in ("en", "en-GB"):
             dist += " · %s mi" % lang.num(meters / 1609.344, 1)
         rows.append("<tr><td>%s</td><td>%s</td><td>%s</td></tr>" % (
             lang.num(steps), lang.t("g2.minutes", n=lang.num(minutes)), dist))
