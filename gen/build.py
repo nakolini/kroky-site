@@ -397,11 +397,16 @@ def website_jsonld(lang):
 
 # ---------------------------------------------------------------- pages
 
+def caption_title(lang, shot):
+    # The captions' line breaks are for the screenshots; Chinese and Japanese don't put a space where they were.
+    return lang.captions[shot]["title"].replace("\n", "" if lang.code in CJK_STOP else " ").rstrip()
+
+
 def phone(lang, shot, cls="phone", eager=False):
     cap = lang.captions[shot]
-    title = cap["title"].replace("\n", " ").rstrip()
+    title = caption_title(lang, shot)
     if title[-1] in ".!?。！？…؟।":
-        alt = "%s %s" % (title, cap["subtitle"])
+        alt = ("%s%s" if lang.code in CJK_STOP else "%s %s") % (title, cap["subtitle"])
     else:
         alt = ("%s。%s" if lang.code in CJK_STOP else "%s। %s" if lang.code in DANDA else "%s۔ %s" if lang.code == "ur" else "%s %s" if lang.code == "th" else "%s. %s") % (
             title, cap["subtitle"])
@@ -416,7 +421,7 @@ def faq_items(lang):
 def home_page(lang):
     shots = "".join(
         '<li><figure>%s<figcaption><strong>%s</strong><span>%s</span></figcaption></figure></li>' % (
-            phone(lang, s), e(lang.captions[s]["title"].replace("\n", " ")), e(lang.captions[s]["subtitle"]))
+            phone(lang, s), e(caption_title(lang, s)), e(lang.captions[s]["subtitle"]))
         for s in SHOTS)
     how = "".join('<li><span class="num">%s</span><div><h3>%s</h3><p>%s</p></div></li>' % (
         lang.num(i), lang.t("how.%d_t" % i), lang.t("how.%d" % i)) for i in range(1, 5))
