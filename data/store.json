@@ -1,0 +1,296 @@
+{
+ "ar": {
+  "name": "Kroky: استراحات المشي",
+  "subtitle": "جولات تُكمل هدف خطواتك اليومي",
+  "promotionalText": "جلست طويلًا؟ ينتظر Kroky طقسًا جافًا ويخطط لك جولة في الحدائق تُكمل ما تبقّى من خطوات اليوم. بلا حساب، وبلا تتبّع.",
+  "keywords": "عداد,خطوات,مشي,جلوس,تذكير,مكتب,موظف,حديقة,مسار,طقس,حركة,رياضة,صحة,لياقة,وقوف,نشاط,خريطة,يومي"
+ },
+ "bn": {
+  "name": "Kroky: হাঁটার বিরতি",
+  "subtitle": "পদক্ষেপের লক্ষ্য মেপে লুপ",
+  "promotionalText": "অনেকক্ষণ বসে আছেন? Kroky শুকনো আবহাওয়ার অপেক্ষা করে এবং পার্কে এমন একটি লুপ বানায়, যা আজকের পদক্ষেপের ঘাটতি পূরণ করে। অ্যাকাউন্ট নেই, ট্র্যাকিং নেই।",
+  "keywords": "পেডোমিটার,স্টেপ কাউন্টার,বসে থাকা,রিমাইন্ডার,অফিস,পার্ক,রুট,আবহাওয়া,স্বাস্থ্য,ফিটনেস,হাঁটা,steps"
+ },
+ "ca": {
+  "name": "Kroky: Pauses per caminar",
+  "subtitle": "Fes els passos que et falten",
+  "promotionalText": "Massa estona sense moure't? Kroky espera que no plogui i planifica un circuit pel parc que tanca la bretxa de passos d'avui. Sense compte, sense rastreig.",
+  "keywords": "podòmetre,comptador,sedentari,assegut,recordatori,oficina,feina,parc,ruta,circuit,temps,pluja,salut"
+ },
+ "cs": {
+  "name": "Kroky: Přestávky na procházku",
+  "subtitle": "Méně sezení, splněný denní cíl",
+  "promotionalText": "Sedíte moc dlouho? Kroky počká na suché počasí a naplánuje okruh parkem, se kterým dnes splníte cíl kroků. Bez účtu, bez sledování.",
+  "keywords": "krokoměr,chůze,sedění,pohyb,připomínka,pauza,kancelář,stůl,park,trasa,okruh,počasí,zdraví,fitness"
+ },
+ "da": {
+  "name": "Kroky: Gåpauser",
+  "subtitle": "Gåture, der når dit skridtmål",
+  "promotionalText": "Siddet for længe? Kroky venter på tørvejr og planlægger en rundtur gennem parken, der når dagens skridtmål. Ingen konto, ingen sporing.",
+  "keywords": "skridttæller,skridt,stillesiddende,påmindelse,kontor,park,rute,vejr,motion,bevægelse,sundhed,fitness"
+ },
+ "de": {
+  "name": "Kroky: Gehpausen",
+  "subtitle": "Spaziergänge fürs Schrittziel",
+  "promotionalText": "Zu lange gesessen? Kroky wartet auf trockenes Wetter und plant eine Runde durch den Park, die dich heute ans Schrittziel bringt. Kein Konto, kein Tracking.",
+  "keywords": "schrittzähler,sitzen,erinnerung,büro,schreibtisch,park,route,wetter,bewegung,gesundheit,fitness"
+ },
+ "el": {
+  "name": "Kroky: Διαλείμματα για βόλτα",
+  "subtitle": "Πιάστε τον στόχο βημάτων σας",
+  "promotionalText": "Καθίσατε πολύ; Το Kroky περιμένει να μη βρέχει και σχεδιάζει έναν γύρο σε πάρκο που σας φτάνει στον σημερινό στόχο βημάτων. Χωρίς λογαριασμό, χωρίς ιχνηλάτηση.",
+  "keywords": "βηματομετρητής,περπάτημα,καθιστική ζωή,υπενθύμιση,γραφείο,πάρκο,διαδρομή,καιρός,κίνηση,υγεία,άσκηση"
+ },
+ "en-AU": {
+  "name": "Kroky: Walk Breaks",
+  "subtitle": "Walks sized to your step goal",
+  "promotionalText": "Been sitting too long? Kroky waits for dry weather and plans a park loop that closes today's step gap. No account, no tracking.",
+  "keywords": "pedometer,counter,sitting,sedentary,reminder,desk,office,park,route,weather,rain,fitness,health"
+ },
+ "en-GB": {
+  "name": "Kroky: Walk Breaks",
+  "subtitle": "Walks sized to your step goal",
+  "promotionalText": "Sat too long? Kroky waits for dry weather and plans a park loop that closes today's step gap. No account, no tracking.",
+  "keywords": "pedometer,counter,sitting,sedentary,reminder,desk,office,park,route,weather,stand up,fitness,health"
+ },
+ "en": {
+  "name": "Kroky: Walk Breaks",
+  "subtitle": "Walks sized to your step goal",
+  "promotionalText": "Sat too long? Kroky waits for dry weather and plans a park loop that closes today's step gap. No account, no tracking.",
+  "keywords": "pedometer,sitting,reminder,desk,office,park,loop,route,weather,move,stand,fitness,health,daily"
+ },
+ "es-419": {
+  "name": "Kroky: Pausas para caminar",
+  "subtitle": "Completa tu meta de pasos",
+  "promotionalText": "¿Mucho rato sin moverte? Kroky espera a que no llueva y planea un circuito por parques para completar tu meta de pasos de hoy. Sin cuenta, sin rastreo.",
+  "keywords": "podómetro,caminata,sedentario,recordatorio,oficina,escritorio,parque,ruta,clima,salud,contador"
+ },
+ "es": {
+  "name": "Kroky: Pausas para caminar",
+  "subtitle": "Paseos según tu meta de pasos",
+  "promotionalText": "¿Mucho rato sin moverte? Kroky espera a que no llueva y planifica un circuito por el parque para completar tu meta de pasos de hoy. Sin cuenta, sin rastreo.",
+  "keywords": "podómetro,sedentario,sentado,recordatorio,oficina,parque,ruta,circuito,tiempo,lluvia,salud,andar"
+ },
+ "fi": {
+  "name": "Kroky: Kävelytauot",
+  "subtitle": "Lenkit askeltavoitteesi mukaan",
+  "promotionalText": "Istunut liian pitkään? Kroky odottaa poutaa ja suunnittelee puistolenkin, joka vie sinut tämän päivän askeltavoitteeseen. Ei tiliä, ei seurantaa.",
+  "keywords": "askelmittari,kävely,istuminen,muistutus,taukoliikunta,toimisto,puisto,reitti,sää,liikunta,terveys"
+ },
+ "fr-CA": {
+  "name": "Kroky : Pauses marche",
+  "subtitle": "Visez votre objectif de pas",
+  "promotionalText": "Assis depuis trop longtemps? Kroky attend un temps sec et planifie une boucle dans les parcs qui comble l'écart de pas du jour. Sans compte, sans suivi.",
+  "keywords": "podomètre,assis,sédentaire,rappel,bureau,parc,boucle,itinéraire,météo,balade,bouger,santé,marcher"
+ },
+ "fr": {
+  "name": "Kroky : Pauses marche",
+  "subtitle": "Balades à la mesure de vos pas",
+  "promotionalText": "Assis depuis trop longtemps ? Kroky attend un temps sec et planifie une boucle dans un parc pour combler l'écart de pas du jour. Sans compte, sans suivi.",
+  "keywords": "podomètre,assis,sédentaire,rappel,bureau,parc,boucle,itinéraire,météo,bouger,santé,forme,promenade"
+ },
+ "gu": {
+  "name": "Kroky: વૉક બ્રેક",
+  "subtitle": "પગલાંના લક્ષ્ય મુજબ ચાલો",
+  "promotionalText": "બહુ લાંબું બેઠા? Kroky વરસાદ અટકે તેની રાહ જુએ છે અને પાર્કમાંથી પસાર થતો એવો લૂપ પ્લાન કરે છે જે આજનાં પગલાંની ઘટ પૂરી કરે. કોઈ એકાઉન્ટ નહીં, કોઈ ટ્રૅકિંગ નહીં.",
+  "keywords": "પેડોમીટર,step counter,બેઠાડુ,રિમાઇન્ડર,ઑફિસ,ડેસ્ક,પાર્ક,રૂટ,હવામાન,વરસાદ,ફિટનેસ,આરોગ્ય,કસરત,ચાલવું"
+ },
+ "he": {
+  "name": "Kroky: הפסקות הליכה",
+  "subtitle": "סיבובים בהתאמה ליעד הצעדים",
+  "promotionalText": "ישבת יותר מדי? Kroky מחכה למזג אוויר יבש ומתכנן סיבוב בפארק שסוגר את פער הצעדים של היום. בלי חשבון, בלי מעקב.",
+  "keywords": "מד צעדים,ישיבה ממושכת,תזכורת,משרד,פארק,מסלול,מזג אוויר,תנועה,כושר,בריאות,עמידה,פעילות גופנית,גשם"
+ },
+ "hi": {
+  "name": "Kroky: वॉक ब्रेक",
+  "subtitle": "कदमों के लक्ष्य जितनी सैर",
+  "promotionalText": "बहुत देर से बैठे हैं? Kroky बारिश रुकने का इंतज़ार करता है और पार्क में ऐसा लूप प्लान करता है जिससे आज के कदमों की कमी पूरी हो। कोई अकाउंट नहीं, कोई ट्रैकिंग नहीं।",
+  "keywords": "पेडोमीटर,step counter,बैठना,रिमाइंडर,ऑफिस,डेस्क,पार्क,रास्ता,मौसम,टहलना,पैदल,फिटनेस,सेहत,walking"
+ },
+ "hr": {
+  "name": "Kroky: Pauze za šetnju",
+  "subtitle": "Hodanje po mjeri cilja koraka",
+  "promotionalText": "Predugo sjedite? Kroky pričeka suho vrijeme i isplanira krug kroz park koji vas dovodi do današnjeg cilja koraka. Bez računa, bez praćenja.",
+  "keywords": "pedometar,brojač,sjedenje,podsjetnik,ured,park,krug,ruta,vrijeme,prognoza,kretanje,zdravlje,fitness"
+ },
+ "hu": {
+  "name": "Kroky: Sétaszünetek",
+  "subtitle": "Körséták a napi lépéscélhoz",
+  "promotionalText": "Túl sokáig ült? A Kroky kivárja a száraz időt, és olyan kört tervez a parkon át, amellyel eléri a mai lépéscélját. Fiók és követés nélkül.",
+  "keywords": "lépésszámláló,lépés,ülés,ülőmunka,emlékeztető,iroda,park,útvonal,időjárás,mozgás,egészség,gyaloglás"
+ },
+ "id": {
+  "name": "Kroky: Jeda Jalan Kaki",
+  "subtitle": "Rute sesuai target langkah",
+  "promotionalText": "Kelamaan duduk? Kroky menunggu cuaca tidak hujan dan merencanakan rute keliling lewat taman untuk memenuhi target langkah hari ini. Tanpa akun, tanpa pelacakan.",
+  "keywords": "pedometer,penghitung,duduk,pengingat,kantor,taman,cuaca,olahraga,kesehatan,bergerak,berdiri,sehat"
+ },
+ "it": {
+  "name": "Kroky: Pause per camminare",
+  "subtitle": "Raggiungi l'obiettivo di passi",
+  "promotionalText": "Troppo tempo seduto? Kroky aspetta il tempo asciutto e pianifica un giro nel parco che colma il divario di passi di oggi. Nessun account, nessun tracciamento.",
+  "keywords": "contapassi,pedometro,camminata,passeggiata,seduto,sedentario,promemoria,ufficio,parco,percorso,meteo"
+ },
+ "ja": {
+  "name": "Kroky: 散歩休憩",
+  "subtitle": "目標歩数に合わせたウォーキング",
+  "promotionalText": "座りすぎていませんか？Krokyは雨のないときを待って、今日の目標歩数に届く公園めぐりのループを作ります。アカウント不要、追跡もなし。",
+  "keywords": "万歩計,歩数計,座りすぎ,運動不足,リマインダー,デスクワーク,オフィス,在宅勤務,公園,ルート,コース,天気,雨,運動,健康,フィットネス,散策,習慣,毎日,テレワーク,気分転換,ステップ"
+ },
+ "kn": {
+  "name": "Kroky: ನಡಿಗೆ ವಿರಾಮಗಳು",
+  "subtitle": "ನಿಮ್ಮ ಹೆಜ್ಜೆ ಗುರಿಗೆ ತಕ್ಕ ಲೂಪ್",
+  "promotionalText": "ತುಂಬಾ ಹೊತ್ತು ಕುಳಿತಿದ್ದೀರಾ? Kroky ಮಳೆ ಇಲ್ಲದ ಹವಾಮಾನಕ್ಕೆ ಕಾದು, ಇಂದಿನ ಉಳಿದ ಹೆಜ್ಜೆಗಳನ್ನು ಪೂರೈಸುವ ಉದ್ಯಾನ ಲೂಪ್ ಯೋಜಿಸುತ್ತದೆ. ಖಾತೆ ಇಲ್ಲ, ಟ್ರ್ಯಾಕಿಂಗ್ ಇಲ್ಲ.",
+  "keywords": "ಪೆಡೋಮೀಟರ್,ವಾಕಿಂಗ್,ಕುಳಿತು,ಜ್ಞಾಪನೆ,ಕಚೇರಿ,ಪಾರ್ಕ್,ಮಾರ್ಗ,ಹವಾಮಾನ,ಆರೋಗ್ಯ,ಫಿಟ್ನೆಸ್,ವ್ಯಾಯಾಮ,step counter"
+ },
+ "ko": {
+  "name": "Kroky: 산책 휴식",
+  "subtitle": "걸음 목표에 딱 맞춘 걷기 코스",
+  "promotionalText": "너무 오래 앉아 있었나요? Kroky가 비가 그칠 때를 기다렸다가, 오늘 남은 걸음을 채워 줄 공원 순환 코스를 계획해요. 계정도, 추적도 없어요.",
+  "keywords": "만보기,만보,걸음수,알림,리마인더,직장인,사무실,공원,경로,루트,날씨,일기예보,건강,운동,피트니스,활동량,습관,좌식생활,오래앉기,일어나기,재택근무,워킹,매일,데스크"
+ },
+ "ml": {
+  "name": "Kroky: നടക്കാനൊരു ഇടവേള",
+  "subtitle": "ചുവട് ലക്ഷ്യത്തിന് ഒത്ത നടത്തം",
+  "promotionalText": "ഏറെ നേരം ഇരുന്നോ? Kroky മഴയില്ലാത്ത സമയത്തിനായി കാത്തിരുന്ന്, ഇന്നത്തെ ബാക്കി ചുവടുകൾ തികയ്ക്കുന്ന ഒരു പാർക്ക് ലൂപ്പ് പ്ലാൻ ചെയ്യുന്നു. അക്കൗണ്ടില്ല, ട്രാക്കിംഗില്ല.",
+  "keywords": "പെഡോമീറ്റർ,step counter,ഇരിപ്പ്,ഓർമ്മപ്പെടുത്തൽ,ഓഫീസ്,പാർക്ക്,കാലാവസ്ഥ,ആരോഗ്യം,ഫിറ്റ്നസ്,വ്യായാമം"
+ },
+ "mr": {
+  "name": "Kroky: वॉक ब्रेक",
+  "subtitle": "पावलांच्या ध्येयानुसार चालणे",
+  "promotionalText": "खूप वेळ बसलात? Kroky कोरड्या हवामानाची वाट पाहते आणि आजची पावलांची तूट भरणारा उद्यानातील लूप प्लॅन करते. खाते नाही, ट्रॅकिंग नाही.",
+  "keywords": "पेडोमीटर,step counter,बसणे,आठवण,रिमाइंडर,ऑफिस,उद्यान,पार्क,लूप,मार्ग,हवामान,आरोग्य,फिटनेस,walking"
+ },
+ "ms": {
+  "name": "Kroky: Rehat Jalan Kaki",
+  "subtitle": "Capai sasaran langkah harian",
+  "promotionalText": "Terlalu lama duduk? Kroky menunggu cuaca tidak hujan dan merancang pusingan di taman untuk mencapai sasaran langkah hari ini. Tiada akaun, tiada penjejakan.",
+  "keywords": "pedometer,duduk,peringatan,pejabat,meja,taman,pusingan,laluan,cuaca,kesihatan,cergas,senaman,gerak"
+ },
+ "nb": {
+  "name": "Kroky: Gåpauser",
+  "subtitle": "Turer som når skrittmålet ditt",
+  "promotionalText": "Sittet for lenge? Kroky venter på tørt vær og planlegger en rundtur i parken som når dagens skrittmål. Ingen konto, ingen sporing.",
+  "keywords": "skritteller,skritt,stillesitting,påminnelse,kontor,park,rundtur,vær,bevegelse,trening,helse,gåtur"
+ },
+ "nl": {
+  "name": "Kroky: Wandelpauzes",
+  "subtitle": "Haal elke dag je stappendoel",
+  "promotionalText": "Te lang gezeten? Kroky wacht op droog weer en plant een rondje door het park dat je stappendoel van vandaag haalt. Geen account, geen tracking.",
+  "keywords": "stappenteller,wandelen,lopen,zitten,herinnering,kantoor,park,route,weer,bewegen,ommetje,gezondheid"
+ },
+ "or": {
+  "name": "Kroky: ଚାଲିବା ବିରତି",
+  "subtitle": "ଦୈନିକ ପାହୁଣ୍ଡ ଲକ୍ଷ୍ୟ ପୂରଣ",
+  "promotionalText": "ବହୁତ ସମୟ ବସିଛନ୍ତି? Kroky ଶୁଖିଲା ପାଗକୁ ଅପେକ୍ଷା କରେ ଏବଂ ପାର୍କରେ ଏକ ଚକ୍କର ଯୋଜନା କରେ, ଯାହା ଆଜିର ବାକି ପାହୁଣ୍ଡ ପୂରଣ କରେ। ଆକାଉଣ୍ଟ ନାହିଁ, ଟ୍ରାକିଂ ନାହିଁ।",
+  "keywords": "ପେଡୋମିଟର,ବସିବା,ସ୍ମାରକ,ଅଫିସ୍,ପାର୍କ,ରାସ୍ତା,ପାଣିପାଗ,ସ୍ୱାସ୍ଥ୍ୟ,ଫିଟନେସ୍,ବ୍ୟାୟାମ,step counter,walking"
+ },
+ "pa": {
+  "name": "Kroky: ਸੈਰ ਲਈ ਬ੍ਰੇਕ",
+  "subtitle": "ਰੋਜ਼ਾਨਾ ਕਦਮਾਂ ਦਾ ਟੀਚਾ ਪੂਰਾ ਕਰੋ",
+  "promotionalText": "ਬਹੁਤ ਦੇਰ ਤੋਂ ਬੈਠੇ ਹੋ? Kroky ਖੁਸ਼ਕ ਮੌਸਮ ਦੀ ਉਡੀਕ ਕਰਦਾ ਹੈ ਅਤੇ ਪਾਰਕ ਵਿੱਚ ਅਜਿਹਾ ਚੱਕਰ ਬਣਾਉਂਦਾ ਹੈ ਜੋ ਅੱਜ ਦੇ ਕਦਮਾਂ ਦੀ ਘਾਟ ਪੂਰੀ ਕਰੇ। ਨਾ ਖਾਤਾ, ਨਾ ਟਰੈਕਿੰਗ।",
+  "keywords": "ਪੈਡੋਮੀਟਰ,ਤੁਰਨਾ,ਬੈਠਣਾ,ਯਾਦ-ਦਹਾਨੀ,ਦਫ਼ਤਰ,ਪਾਰਕ,ਚੱਕਰ,ਰਸਤਾ,ਮੌਸਮ,ਸਿਹਤ,ਫਿਟਨੈਸ,ਕਸਰਤ,step counter,walking,ਡੈਸਕ"
+ },
+ "pl": {
+  "name": "Kroky: przerwy na spacer",
+  "subtitle": "Trasy na miarę celu kroków",
+  "promotionalText": "Za długo siedzisz? Kroky czeka na suchą pogodę i planuje pętlę przez park, z którą uzupełnisz brakujące dziś kroki. Bez konta, bez śledzenia.",
+  "keywords": "krokomierz,siedzenie,przypomnienie,ruch,biuro,park,pętla,pogoda,zdrowie,fitness,chodzenie,aktywność"
+ },
+ "pt-BR": {
+  "name": "Kroky: Pausas para caminhar",
+  "subtitle": "Complete sua meta de passos",
+  "promotionalText": "Muito tempo sentado? O Kroky espera o tempo secar e planeja um circuito no parque para completar sua meta de passos de hoje. Sem conta, sem rastreamento.",
+  "keywords": "pedômetro,contador,sentado,sedentarismo,lembrete,escritório,parque,circuito,clima,saúde,caminhada"
+ },
+ "pt-PT": {
+  "name": "Kroky: Pausas para caminhar",
+  "subtitle": "Cumpra o objetivo de passos",
+  "promotionalText": "Muito tempo sentado? O Kroky espera que não chova e planeia um circuito por parques para cumprir o objetivo de passos de hoje. Sem conta, sem rastreio.",
+  "keywords": "pedómetro,sentado,sedentário,lembrete,escritório,parque,circuito,rota,tempo,saúde,exercício,andar"
+ },
+ "ro": {
+  "name": "Kroky: Pauze de plimbare",
+  "subtitle": "Pași spre obiectivul zilnic",
+  "promotionalText": "Ați stat prea mult? Kroky așteaptă vreme uscată și planifică o buclă prin parc care vă aduce la obiectivul de pași de azi. Fără cont, fără urmărire.",
+  "keywords": "pedometru,podometru,mers pe jos,sedentar,stat jos,memento,birou,parc,traseu,vreme,sănătate,fitness"
+ },
+ "ru": {
+  "name": "Kroky: перерывы на прогулку",
+  "subtitle": "Ходьба под вашу цель шагов",
+  "promotionalText": "Засиделись? Kroky дождётся сухой погоды и построит круг по парку, чтобы добрать сегодняшний остаток шагов. Без аккаунта и без слежки.",
+  "keywords": "шагомер,сидячая работа,напоминание,офис,парк,маршрут,погода,здоровье,фитнес,движение,разминка,гулять"
+ },
+ "sk": {
+  "name": "Kroky: Pauzy na prechádzku",
+  "subtitle": "Menej sedenia, viac chôdze",
+  "promotionalText": "Sedíte príliš dlho? Kroky počká na suché počasie a naplánuje okruh parkom, s ktorým dnes splníte cieľ krokov. Bez účtu, bez sledovania.",
+  "keywords": "krokomer,pripomienka,prestávka,kancelária,stôl,park,okruh,trasa,počasie,pohyb,zdravie,fitness,vstať"
+ },
+ "sl": {
+  "name": "Kroky: Odmori za sprehod",
+  "subtitle": "Hoja po meri cilja korakov",
+  "promotionalText": "Predolgo sedite? Kroky počaka na suho vreme in načrtuje krog skozi park, s katerim danes dosežete cilj korakov. Brez računa, brez sledenja.",
+  "keywords": "števec,pedometer,sedenje,opomnik,pisarna,služba,park,pot,vreme,zdravje,fitnes,gibanje,hodenje,pavza"
+ },
+ "sv": {
+  "name": "Kroky: Promenadpauser",
+  "subtitle": "Sitt mindre, nå ditt stegmål",
+  "promotionalText": "Suttit för länge? Kroky väntar på uppehåll och planerar en runda genom parken som tar dig till dagens stegmål. Inget konto, ingen spårning.",
+  "keywords": "stegräknare,steg,stillasittande,påminnelse,kontor,skrivbord,park,runda,väder,hälsa,motion,promenad"
+ },
+ "ta": {
+  "name": "Kroky: நடை இடைவேளைகள்",
+  "subtitle": "அடி இலக்குக்கு ஏற்ற சுற்று",
+  "promotionalText": "அதிக நேரம் உட்கார்ந்துவிட்டீர்களா? Kroky மழை இல்லாத நேரத்துக்குக் காத்திருந்து, இன்றைய மீதி அடிகளை நிறைவுசெய்யும் சுற்றைத் திட்டமிடும். கணக்கு இல்லை, கண்காணிப்பு இல்லை.",
+  "keywords": "அடிமானி,pedometer,நடைப்பயிற்சி,உட்கார்ந்து,நினைவூட்டல்,அலுவலகம்,பூங்கா,வானிலை,உடற்பயிற்சி,உடல்நலம்"
+ },
+ "te": {
+  "name": "Kroky: నడక విరామాలు",
+  "subtitle": "రోజువారీ అడుగుల లక్ష్యం చేరండి",
+  "promotionalText": "చాలా సేపు కూర్చున్నారా? Kroky వర్షం లేని సమయం కోసం వేచి, ఈరోజు మిగిలిన అడుగులను పూర్తి చేసే పార్క్ లూప్‌ను ప్లాన్ చేస్తుంది. ఖాతా లేదు, ట్రాకింగ్ లేదు.",
+  "keywords": "pedometer,step counter,వాకింగ్,కూర్చోవడం,రిమైండర్,ఆఫీస్,పార్క్,లూప్,రూట్,వాతావరణం,ఆరోగ్యం,ఫిట్‌నెస్"
+ },
+ "th": {
+  "name": "Kroky: พักเบรกไปเดิน",
+  "subtitle": "เส้นทางวนพอดีกับเป้าหมายก้าว",
+  "promotionalText": "นั่งนานเกินไปแล้วใช่ไหม? Kroky รอจนฝนไม่ตก แล้ววางแผนเส้นทางวนผ่านสวนให้ก้าววันนี้ครบเป้า ไม่ต้องมีบัญชี ไม่มีการติดตาม",
+  "keywords": "นับก้าว,นั่งนาน,แจ้งเตือน,ออฟฟิศ,โต๊ะทำงาน,สวนสาธารณะ,สภาพอากาศ,ฝน,สุขภาพ,ออกกำลังกาย,ฟิตเนส,ขยับตัว"
+ },
+ "tr": {
+  "name": "Kroky: Yürüyüş Molaları",
+  "subtitle": "Adım hedefinize göre turlar",
+  "promotionalText": "Çok mu oturdunuz? Kroky yağışsız havayı bekler ve bugünkü adım açığınızı kapatan bir park turu planlar. Hesap yok, takip yok.",
+  "keywords": "adımsayar,pedometre,oturma,hatırlatıcı,masa başı,ofis,park,rota,hava durumu,sağlık,fitness,hareket"
+ },
+ "uk": {
+  "name": "Kroky: перерви на прогулянку",
+  "subtitle": "Маршрути під вашу ціль кроків",
+  "promotionalText": "Засиділися? Kroky чекає на суху погоду й будує коло парками, яке доведе вас до сьогоднішньої цілі за кроками. Без облікового запису, без стеження.",
+  "keywords": "крокомір,ходьба,сидяча робота,нагадування,офіс,парк,погода,рух,розминка,активність,здоровʼя,фітнес"
+ },
+ "ur": {
+  "name": "Kroky: واک کے وقفے",
+  "subtitle": "روزانہ قدموں کا ہدف پورا کریں",
+  "promotionalText": "بہت دیر سے بیٹھے ہیں؟ Kroky خشک موسم کا انتظار کرتا ہے اور پارک میں ایسا چکر پلان کرتا ہے جو آج کے قدموں کی کمی پوری کرے۔ نہ اکاؤنٹ، نہ ٹریکنگ۔",
+  "keywords": "پیڈومیٹر,چہل قدمی,بیٹھنا,یاد دہانی,دفتر,پارک,چکر,راستہ,موسم,صحت,فٹنس,ورزش,حرکت,step counter,walking"
+ },
+ "vi": {
+  "name": "Kroky: Đi bộ giải lao",
+  "subtitle": "Vòng dạo vừa đủ mục tiêu bước",
+  "promotionalText": "Ngồi quá lâu rồi? Kroky chờ trời khô ráo và tạo một vòng đi bộ qua công viên để bạn đủ số bước hôm nay. Không cần tài khoản, không theo dõi.",
+  "keywords": "ngồi lâu,nhắc nhở,văn phòng,công viên,lộ trình,thời tiết,sức khỏe,thể dục,vận động,đứng dậy,đếm"
+ },
+ "zh-Hans": {
+  "name": "Kroky：工间散步",
+  "subtitle": "久坐提醒，补足每日步数",
+  "promotionalText": "坐得太久了？Kroky 会等到无雨时，为你规划一条穿过公园的环线，正好补足今天还差的步数。无需账户，不做追踪。",
+  "keywords": "计步器,走路,健走,步行,办公室,上班族,白领,午休,公园,路线,环线,地图,导航,天气,下雨,户外,健康,健身,运动,活动,站起来,休息,目标,打卡,健步走,遛弯"
+ },
+ "zh-Hant": {
+  "name": "Kroky：起身走走",
+  "subtitle": "久坐提醒，補足每日步數",
+  "promotionalText": "坐太久了嗎？Kroky 會等到沒下雨時，為你規劃一條穿過公園的環線，剛好補足今天還差的步數。不需要帳號，不做追蹤。",
+  "keywords": "計步器,散步,健走,走路,步行,上班族,辦公室,午休,公園,路線,環線,地圖,導航,天氣,下雨,戶外,健康,健身,運動,活動,休息,目標,日行萬步,站起來"
+ }
+}
