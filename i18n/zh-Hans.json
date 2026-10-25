@@ -172,7 +172,7 @@
   "support.meta": "帮助、问题和错误报告。",
   "support.faq_h2": "常见问题",
   "support.steps_q": "为什么 Kroky 不显示我的步数？",
-  "support.steps_a": "Kroky 从 Apple“健康”读取步数。如果主页显示“Kroky 无法读取你的步数”，它会认为你一直坐着。<br><br>要开启访问权限，请打开“健康”App，轻点你的头像，然后轻点“隐私”下方的“App”。选择 Kroky，开启“步数”和“步行步长”。另外请确认“设置 › 隐私与安全性 › 运动与健身 › 健身记录”已开启，否则 iPhone 根本不会计步。",
+  "support.steps_a": "Kroky 从 Apple“健康”读取步数。如果主页显示“Kroky 无法读取你的步数”，它会认为你一直坐着。<br><br>要开启访问权限，请打开“健康”App，轻点你的头像，然后轻点“隐私”下方的“App”。选择 Kroky，开启“步数”和“步行步长”。另外请确认“设置 › 隐私与安全 › 运动与健身 › 健身追踪”已开启，否则 iPhone 根本不会计步。",
   "support.nudges_q": "为什么我收不到提醒？",
   "support.nudges_a": "请依次检查以下几项：<br><br><strong>Kroky Pro。</strong>久坐提醒和天气提醒是 Kroky Pro 功能。<br><strong>提醒已开启。</strong>在 Kroky 中打开“设置”（主页上的齿轮图标），确认“久坐提醒和天气提醒”已开启，并查看久坐多久后才会提醒。<br><strong>提醒时段和日期。</strong>Kroky 只在“提醒时段”中设定的时间和日期内提醒。开启“会议时免打扰”后，日历显示你忙碌时它也会保持安静。<br><strong>通知。</strong>在 iOS 的“设置”App › 通知 › Kroky 中允许通知。<br><br>Kroky 每天最多提醒 2 次。App 何时能在后台检查由 iOS 决定，因此提醒可能会比预期稍晚一些；时不时打开一下 Kroky 会有帮助。",
   "support.loop_q": "为什么 Kroky 无法在这里规划环线？",
