@@ -1,0 +1,268 @@
+# Kroky: Walk Breaks
+
+> Kroky is an iPhone app that notices when you've been sitting, waits for dry weather and plans a walking loop from where you are, just long enough to close the gap to today's step goal. Free to start; Kroky Pro is a yearly subscription with a 7-day free trial ($19.99 a year in the US) or a one-time lifetime purchase ($49.99 in the US). iPhone only, iOS 17 or later. No account, no server, no analytics, no tracking. In 49 languages. Made by nakolini (https://nakolini.com/), a two-person studio of Dmytro Hryb and Vitalii Kikot.
+
+## Pages
+
+- [Kroky for iPhone](https://kroky.nakolini.com/): what it does, how it works, free vs Kroky Pro, privacy, FAQ
+- [An app that reminds you to get up and walk when you've been sitting too long](https://kroky.nakolini.com/guides/walk-reminder/): Kroky is an iPhone app that reads your steps from Apple Health, notices a long stretch without them and, when it's dry outside, nudges you with a walk that's ready to go: a loop from where you are, sized to close the gap to today's step goal.
+- [How long do I need to walk to reach my step goal?](https://kroky.nakolini.com/guides/how-long-to-walk-for-step-goal/): At an easy walking pace of about 100 steps a minute, 1,000 steps take about 10 minutes and cover about 750 m (0.5 mi). So 3,000 steps left is a walk of about 30 minutes and 2.3 km (1.4 mi).
+- [How to find a walking loop near you that starts and ends at your door](https://kroky.nakolini.com/guides/walking-loop-near-me/): Open Kroky and tap Walk Now: it plans a loop that starts and ends where you are, goes through nearby parks and quiet streets where it can, comes back a different way when the streets allow, and fits the steps or minutes you want.
+- [A sitting reminder on iPhone, without an Apple Watch](https://kroky.nakolini.com/guides/sitting-reminder-iphone-without-apple-watch/): Stand reminders are part of Apple Watch; the iPhone has no built-in reminder to get up. Kroky adds one: it reads the steps your iPhone already counts in Apple Health and, after a long stretch without them, nudges you with a walk sized to the steps you still need, when it's dry outside.
+- [How to get 10,000 steps a day with a desk job](https://kroky.nakolini.com/guides/10000-steps-desk-job/): Split the gap into walks. At an easy pace, 1,000 steps take about 10 minutes, so if a desk day leaves you at 4,000 steps, two walks of about 30 minutes close the gap to 10,000. Kroky reads the steps you still need and plans a loop of that length from where you are.
+- [Support](https://kroky.nakolini.com/support.html): Apple Health access, nudges, restoring and cancelling Kroky Pro, contact
+- [Privacy Policy](https://kroky.nakolini.com/privacy-policy.html): collects nothing; what goes to Apple and OpenStreetMap
+- [Terms of Use](https://kroky.nakolini.com/terms.html): Apple's standard EULA plus walking safety, Kroky Pro billing, map data
+- [App Store](https://apps.apple.com/us/app/kroky-walk-breaks/id6824215298)
+- [Press kit](https://kroky.nakolini.com/press/): fact sheet, icon and screenshots
+- [nakolini, the studio behind Kroky](https://nakolini.com/)
+
+## Facts
+
+- On the App Store since 2026-11-03 (version 1.0): https://apps.apple.com/us/app/kroky-walk-breaks/id6824215298. The App Store lists the developer as Vitalii Kikot, co-founder of nakolini
+- Category: Health & Fitness. Price: free, with in-app purchases (Kroky Pro)
+- App Store name: Kroky: Walk Breaks. Localized names: Kroky: Gehpausen; Kroky: Gåpauser; Kroky: Jeda Jalan Kaki; Kroky: Kävelytauot; Kroky: Odmori za sprehod; Kroky: Pausas para caminar; Kroky: Pausas para caminhar; Kroky: Pause per camminare; Kroky: Pauses per caminar; Kroky: Pauze de plimbare; Kroky: Pauze za šetnju; Kroky: Pauzy na prechádzku; Kroky: Promenadpauser; Kroky: Přestávky na procházku; Kroky: Rehat Jalan Kaki; Kroky: Sétaszünetek; Kroky: Wandelpauzes; Kroky: Yürüyüş Molaları; Kroky: przerwy na spacer; Kroky: Đi bộ giải lao; Kroky: Διαλείμματα για βόλτα; Kroky: перерви на прогулянку; Kroky: перерывы на прогулку; Kroky: הפסקות הליכה; Kroky: استراحات المشي; Kroky: واک کے وقفے; Kroky: वॉक ब्रेक; Kroky: হাঁটার বিরতি; Kroky: ਸੈਰ ਲਈ ਬ੍ਰੇਕ; Kroky: વૉક બ્રેક; Kroky: ଚାଲିବା ବିରତି; Kroky: நடை இடைவேளைகள்; Kroky: నడక విరామాలు; Kroky: ನಡಿಗೆ ವಿರಾಮಗಳು; Kroky: നടക്കാനൊരു ഇടവേള; Kroky: พักเบรกไปเดิน; Kroky: 散歩休憩; Kroky: 산책 휴식; Kroky : Pauses marche; Kroky：工间散步; Kroky：起身走走
+- What it does: reads steps from Apple Health, notices a long sit (90 minutes by default), finds today's dry window in Apple Weather's hourly forecast, and plans a walking loop from where you are through parks and quiet streets, sized to close the gap to today's step goal (6,000, 8,000 or 10,000 steps) or 15, 30, 45 or 60 minutes. Guides the walk on a live map with optional spoken directions, also with the screen locked. Apple Maps or Google Maps hand-off is optional
+- Free: one new loop and one shuffle a day, today's dry window, steps and gap, live guidance, reverse, rate and avoid a street, weekly view, streak, walk results and history
+- Kroky Pro: sitting nudges (at most 2 a day, in your hours and days, with snooze and your own threshold), reminders when a dry window opens, Skip my meetings (calendar busy times), unlimited loops and shuffles, favorite loops mixed back in
+- Not: no Apple Watch app (watch steps count through Apple Health), no Android or iPad version, no workouts, no running or cycling routes, no social features
+- Privacy: location only while using the app, and continuously only during a walk the user starts; never "Always". Health data is read only, never written or sent. Weather and routing through Apple; parks and paths from OpenStreetMap Overpass with a location rounded to about 100 m
+- The name: "kroky" means "steps" (Ukrainian кроки in Latin letters; Czech and Slovak as is)
+- Support: support@kroky.nakolini.com
+
+## Questions and answers
+
+### What is Kroky?
+
+Kroky: Walk Breaks is an iPhone app for people who sit a lot. It notices when you've been sitting, checks when it's dry outside and plans a walking loop from where you are, sized to close the gap to today's step goal. Then it guides you around the loop on a live map.
+
+### Is Kroky free?
+
+Kroky is free to download and use, with one new loop and one shuffle a day, today's dry window, your steps, live guidance, your weekly view and walk history. Kroky Pro adds sitting nudges, weather reminders, Skip my meetings, unlimited loops and shuffles, and your favorite loops mixed back in. It's a yearly subscription with a 7-day free trial, or a one-time lifetime purchase. Everything free stays free, forever.
+
+### How is Kroky different from Apple Watch stand reminders?
+
+A stand reminder asks you to stand and move for a minute each hour. Kroky is about walking: it nudges you only after a long stretch with no steps in Apple Health (90 minutes by default), at most twice a day, only in your hours and only when it's dry, and it can skip your meetings. Each nudge comes with a walk already planned for the steps you have left today, and it works without a watch. Sitting nudges are part of Kroky Pro.
+
+### Is there an app that reminds me to take a walk when I've been sitting too long?
+
+Yes. Kroky reads your steps from Apple Health and, after a long stretch without steps, sends a nudge with a walk ready to go. You choose the hours, the days and how long a sit counts as too long; the default is 90 minutes, from 9 AM to 6 PM on weekdays. It sends at most two nudges a day and only when it's dry. Sitting nudges are part of Kroky Pro.
+
+### Which app plans a walking route to reach my daily step goal?
+
+Kroky does. It takes the steps you still need today, turns them into a distance with your own stride, and plans a loop that starts and ends where you are and is just that long. You can also pick a 15, 30, 45 or 60-minute walk instead.
+
+### Can Kroky find a walking loop near me that avoids busy roads?
+
+It tries to. Kroky looks for parks and walking paths around you with Apple Maps and OpenStreetMap, plans the loop through them and keeps off busy streets where the map allows. If you don't like a stretch, mark it and future loops will avoid it.
+
+### Does Kroky check the weather before suggesting a walk?
+
+Yes. It uses Apple Weather's hourly forecast to find today's dry window and shows how long it stays dry. Nudges only come when it's dry, and Kroky Pro can remind you when a dry window opens.
+
+### Do I need an account?
+
+No. There is no sign-up and no login. Open the app, allow Apple Health access and set a daily goal of 6,000, 8,000 or 10,000 steps.
+
+### Does Kroky track my location?
+
+Only when you ask it to. Kroky uses your location while the app is open, to plan a loop and get the weather. It uses it continuously only during a walk you start, from Go until you end it. It never asks for "Always" location and never tracks you outside a walk. Your routes stay on your iPhone.
+
+### Does it work with Apple Watch?
+
+Kroky has no Apple Watch app, but it reads your steps from Apple Health, which counts the steps from your iPhone and your Apple Watch together. So a walk with your watch on counts toward your goal.
+
+### Does Kroky guide me during the walk?
+
+Yes. Tap Go and Kroky shows where you are on the loop, the part you've walked, and the distance and time left. Spoken directions are optional, and guidance keeps working with the screen locked. You can also open the loop in Apple Maps or Google Maps.
+
+### Is Kroky available for Android or iPad?
+
+Not yet. Kroky is for iPhone, with iOS 17 or later.
+
+### Where does Kroky work?
+
+Anywhere Apple Maps has walking directions. Loops are best where there are parks and footpaths nearby; in places with few, Kroky plans the quietest loop it can, or a walk there and back.
+
+### What languages does Kroky support?
+
+49: English, Arabic, Bengali, Catalan, Chinese (Simplified and Traditional), Croatian, Czech, Danish, Dutch, Finnish, French (France and Canada), German, Greek, Gujarati, Hebrew, Hindi, Hungarian, Indonesian, Italian, Japanese, Kannada, Korean, Malay, Malayalam, Marathi, Norwegian, Odia, Polish, Portuguese (Brazil and Portugal), Punjabi, Romanian, Russian, Slovak, Slovenian, Spanish (Spain and Latin America), Swedish, Tamil, Telugu, Thai, Turkish, Ukrainian, Urdu and Vietnamese. English comes in US, British and Australian versions.
+
+### What does the name Kroky mean?
+
+"Steps." It's the Ukrainian word кроки written in Latin letters. In Czech and Slovak, kroky is simply the everyday word for steps.
+
+### Who makes Kroky?
+
+nakolini, a two-person studio of engineers Dmytro Hryb and Vitalii Kikot, who build apps and put AI to work for companies. See nakolini.com.
+
+## Optional
+
+- Every page is available in: English (https://kroky.nakolini.com/), العربية (https://kroky.nakolini.com/ar/), বাংলা (https://kroky.nakolini.com/bn/), Català (https://kroky.nakolini.com/ca/), Čeština (https://kroky.nakolini.com/cs/), Dansk (https://kroky.nakolini.com/da/), Deutsch (https://kroky.nakolini.com/de/), Ελληνικά (https://kroky.nakolini.com/el/), English (Australia) (https://kroky.nakolini.com/en-au/), English (UK) (https://kroky.nakolini.com/en-gb/), Español (España) (https://kroky.nakolini.com/es/), Español (Latinoamérica) (https://kroky.nakolini.com/es-419/), Suomi (https://kroky.nakolini.com/fi/), Français (https://kroky.nakolini.com/fr/), Français (Canada) (https://kroky.nakolini.com/fr-ca/), ગુજરાતી (https://kroky.nakolini.com/gu/), עברית (https://kroky.nakolini.com/he/), हिन्दी (https://kroky.nakolini.com/hi/), Hrvatski (https://kroky.nakolini.com/hr/), Magyar (https://kroky.nakolini.com/hu/), Bahasa Indonesia (https://kroky.nakolini.com/id/), Italiano (https://kroky.nakolini.com/it/), 日本語 (https://kroky.nakolini.com/ja/), ಕನ್ನಡ (https://kroky.nakolini.com/kn/), 한국어 (https://kroky.nakolini.com/ko/), മലയാളം (https://kroky.nakolini.com/ml/), मराठी (https://kroky.nakolini.com/mr/), Bahasa Melayu (https://kroky.nakolini.com/ms/), Norsk bokmål (https://kroky.nakolini.com/nb/), Nederlands (https://kroky.nakolini.com/nl/), ଓଡ଼ିଆ (https://kroky.nakolini.com/or/), ਪੰਜਾਬੀ (https://kroky.nakolini.com/pa/), Polski (https://kroky.nakolini.com/pl/), Português (Brasil) (https://kroky.nakolini.com/pt-br/), Português (Portugal) (https://kroky.nakolini.com/pt-pt/), Română (https://kroky.nakolini.com/ro/), Русский (https://kroky.nakolini.com/ru/), Slovenčina (https://kroky.nakolini.com/sk/), Slovenščina (https://kroky.nakolini.com/sl/), Svenska (https://kroky.nakolini.com/sv/), தமிழ் (https://kroky.nakolini.com/ta/), తెలుగు (https://kroky.nakolini.com/te/), ไทย (https://kroky.nakolini.com/th/), Türkçe (https://kroky.nakolini.com/tr/), Українська (https://kroky.nakolini.com/uk/), اردو (https://kroky.nakolini.com/ur/), Tiếng Việt (https://kroky.nakolini.com/vi/), 简体中文 (https://kroky.nakolini.com/zh-hans/), 繁體中文 (https://kroky.nakolini.com/zh-hant/).
+
+# Full text
+
+## Kroky for iPhone (https://kroky.nakolini.com/)
+
+You've been sitting for 95 minutes. It's dry until 6 PM. Here's a 30-minute walk.
+
+Kroky notices when you've been sitting, waits for dry weather and plans a loop from where you are, sized to close the gap to today's step goal. Tap Go and it guides you turn by turn.
+
+### How it works
+
+1. It notices you've been sitting: Kroky reads your steps from Apple Health. After a long stretch without steps (90 minutes unless you change it), it's time for a walk.
+2. It waits for dry weather: It checks the hourly forecast and finds today's dry window, so the walk doesn't start in the rain.
+3. It plans a loop sized to your gap: From where you are and back, long enough to close the gap to today's step goal, or 15, 30, 45 or 60 minutes. It goes through parks and quiet streets where it can, and comes back a different way when the streets allow.
+4. Tap Go and walk: Kroky guides you on a live map, with spoken directions if you like, even with the screen locked. Apple Maps or Google Maps are one tap away if you prefer them.
+
+### What Kroky does
+
+- Sitting nudges (Kroky Pro): A notification after a long sit, only in the hours and on the days you choose, at most twice a day, and only when it's dry out.
+- Today's dry window: Home shows how long it stays dry, from Apple Weather's hourly forecast. Kroky can remind you when a dry window opens.
+- A loop that closes the gap: Steps turn into distance with your own stride, learned from your walks. The loop is just long enough for the steps you have left today.
+- Every turn, right in Kroky: Follow the loop on a live map with the walked part grayed out, distance and time left, and optional spoken directions.
+- Loops that get better: Shuffle for a different loop, reverse it, rate it, keep the ones you like and mark a street to avoid. A loop you've been offered won't come back for at least a week.
+- Your week at a glance: Walks this week, steps added, a streak, each walk's result and your walk history with every route.
+- Skip my meetings (Kroky Pro): With your permission, Kroky checks your calendar on your iPhone and stays quiet during events marked busy.
+- Miles or kilometers: Distances follow your iPhone's region settings. Kroky speaks 49 languages.
+
+### Private by design
+
+- On your iPhone: Your steps, settings and walk history stay on the device. There is no Kroky server.
+- No account: Open the app and set a goal. There is nothing to sign up for.
+- No tracking: No analytics, no ads, no tracking SDKs. Location is used while Kroky is open, and during a walk you start, until you end it.
+
+### Walk free every day. Go Pro for the nudges.
+
+Everything free stays free, forever. Kroky Pro is a yearly subscription with a 7-day free trial, or pay once for lifetime access with no subscription. Cancel the yearly plan anytime. The App Store shows the price for your country before you buy. In the US, Kroky Pro is $19.99 a year, or $49.99 once for lifetime access.
+
+## An app that reminds you to get up and walk when you've been sitting too long (https://kroky.nakolini.com/guides/walk-reminder/)
+
+Kroky is an iPhone app that reads your steps from Apple Health, notices a long stretch without them and, when it's dry outside, nudges you with a walk that's ready to go: a loop from where you are, sized to close the gap to today's step goal.
+
+### Why a step-based reminder works better than a timer
+
+A timer nudges you every hour whether or not you've moved. Kroky counts real steps, so a walk to a meeting or the kitchen resets the clock, and a nudge only comes when you've really been still. It also waits for a dry window and stays inside the hours you set, so a reminder is a walk you can take now, not one more alert to dismiss.
+
+### Setting it up
+
+- Allow Kroky to read steps from Apple Health. It only reads; it never writes.
+- Pick a daily goal: 6,000, 8,000 or 10,000 steps.
+- Set the hours and days Kroky may nudge you, for example 9 AM to 6 PM on weekdays.
+- In Settings, set Nudge after sitting for (90 minutes by default), and turn on Skip my meetings if you want quiet during calendar events.
+
+### Good to know
+
+Sitting nudges are part of Kroky Pro; the free plan gives you a new loop every day when you open the app. Kroky sends at most two nudges a day. iOS decides exactly when an app can check in the background, so a nudge can come a little later than expected.
+
+## How long do I need to walk to reach my step goal? (https://kroky.nakolini.com/guides/how-long-to-walk-for-step-goal/)
+
+At an easy walking pace of about 100 steps a minute, 1,000 steps take about 10 minutes and cover about 750 m (0.5 mi). So 3,000 steps left is a walk of about 30 minutes and 2.3 km (1.4 mi).
+
+### Steps, minutes and distance
+
+| Steps left | Walk | Distance |
+| --- | --- | --- |
+| 1,000 | about 10 min | 0.8 km (0.5 mi) |
+| 2,000 | about 20 min | 1.5 km (0.9 mi) |
+| 3,000 | about 30 min | 2.3 km (1.4 mi) |
+| 4,000 | about 40 min | 3.0 km (1.9 mi) |
+| 5,000 | about 50 min | 3.8 km (2.3 mi) |
+| 8,000 | about 80 min | 6.0 km (3.7 mi) |
+| 10,000 | about 100 min | 7.5 km (4.7 mi) |
+
+With a stride of 0.75 m and a pace of 75 m a minute. Taller people and faster walkers cover more ground per step and per minute.
+
+### Your own numbers
+
+Stride and pace differ from person to person. Kroky starts from your walking step length in Apple Health and, after two walks with Kroky, uses the stride and pace from your own walks, so the steps it plans match the steps Health counts.
+
+### Let Kroky do the math
+
+Home shows the steps you have left today. Tap Close gap and Kroky plans a loop from where you are that's just long enough, or pick 15, 30, 45 or 60 minutes.
+
+## How to find a walking loop near you that starts and ends at your door (https://kroky.nakolini.com/guides/walking-loop-near-me/)
+
+Open Kroky and tap Walk Now: it plans a loop that starts and ends where you are, goes through nearby parks and quiet streets where it can, comes back a different way when the streets allow, and fits the steps or minutes you want.
+
+### How Kroky finds the loop
+
+Kroky looks for parks, walking paths and busy roads around you with Apple Maps and OpenStreetMap, picks a few points through parks and green spaces and asks Apple Maps for walking directions between them. It tries several shapes and keeps the one closest to the length you need, with the least time beside busy roads.
+
+### Make it yours
+
+- Shuffle for a different loop.
+- Reverse it to walk the other way around.
+- Avoid part of a walk you didn't like; future loops keep off it.
+- Keep a loop you liked, and Kroky Pro mixes your favorites back in.
+
+### Good to know
+
+Loops come from map data, so check what's in front of you: paths can be closed, unlit or muddy. Where there are few parks or paths, Kroky plans the quietest loop it can, or a walk there and back.
+
+## A sitting reminder on iPhone, without an Apple Watch (https://kroky.nakolini.com/guides/sitting-reminder-iphone-without-apple-watch/)
+
+Stand reminders are part of Apple Watch; the iPhone has no built-in reminder to get up. Kroky adds one: it reads the steps your iPhone already counts in Apple Health and, after a long stretch without them, nudges you with a walk sized to the steps you still need, when it's dry outside.
+
+### How it differs from Apple Watch stand reminders
+
+A stand reminder asks you to stand and move for a minute each hour. Kroky is about walking: it waits for a long stretch without steps (90 minutes by default), checks the weather, and comes with a loop from where you are, sized to close the gap to today's step goal. It nudges at most twice a day, only in the hours you set, and can stay quiet during your meetings.
+
+### What it needs
+
+- An iPhone with iOS 17 or later. Your iPhone counts steps on its own while you carry it.
+- Permission to read steps from Apple Health. If you also wear an Apple Watch, its steps count too.
+- Notifications, and the hours and days Kroky may nudge you.
+
+### Good to know
+
+Sitting nudges are part of Kroky Pro, which starts with a 7-day free trial; the free plan gives you a new loop every day when you open the app. Steps only count while your iPhone is with you, so if it stays on the desk while you walk around, Kroky can think you've been sitting. Kroky doesn't log stand hours or replace your Activity rings.
+
+## How to get 10,000 steps a day with a desk job (https://kroky.nakolini.com/guides/10000-steps-desk-job/)
+
+Split the gap into walks. At an easy pace, 1,000 steps take about 10 minutes, so if a desk day leaves you at 4,000 steps, two walks of about 30 minutes close the gap to 10,000. Kroky reads the steps you still need and plans a loop of that length from where you are.
+
+### Do the math once
+
+Look up in Apple Health how many steps you usually have by the end of a workday, subtract them from 10,000 and divide by 100: that's roughly how many minutes of walking you need. 6,000 steps left is about an hour: two 30-minute walks, or three of 20.
+
+### Fit the walks into the day
+
+- Walk at lunch, when you'd stop anyway.
+- Take a second walk in the afternoon, after a long stretch at the desk.
+- Go when it's dry: a walk planned for the rain is the one you skip.
+- Pick a goal you can keep. One you reach most days does more than one you rarely reach; Kroky offers 6,000, 8,000 and 10,000 steps.
+
+### Let Kroky plan them
+
+Home shows the steps you have left today. Tap Close gap for a loop that's just long enough, or pick 15, 30, 45 or 60 minutes to split the gap into shorter walks. With Kroky Pro, Kroky nudges you after a long sit, when it's dry.
+
+## Support (https://kroky.nakolini.com/support.html)
+
+### Why doesn't Kroky show my steps?
+
+Kroky reads steps from Apple Health. If Home says "Kroky can't see your steps", it assumes you've been sitting. To turn access on, open the Health app, tap your profile picture, then Apps under Privacy. Choose Kroky and turn on Steps and Walking Step Length. Also check that Settings › Privacy & Security › Motion & Fitness › Fitness Tracking is on, so your iPhone counts steps at all.
+
+### Why am I not getting nudges?
+
+Check these, in order: Kroky Pro. Sitting nudges and weather reminders are part of Kroky Pro. Nudges are on. In Kroky, open Settings (the gear on Home) and check that "Nudges and weather reminders" is on, and how long you have to sit before one comes. Nudge hours and days. Kroky only nudges between the hours and on the days set under "Nudge me between". With Skip my meetings on, it also stays quiet when your calendar shows you as busy. Notifications. In the iOS Settings app › Notifications › Kroky, allow notifications. Kroky sends at most two nudges a day. iOS decides exactly when the app can check in the background, so a nudge can come a little later than expected, and opening Kroky now and then helps.
+
+### Why can't Kroky plan a loop here?
+
+Kroky needs your location and an internet connection to plan a loop. If it says "Couldn't build a loop of this length here", try a shorter or longer walk, or Shuffle. In places with few streets or paths, it may offer a walk there and back instead.
+
+### How do I restore Kroky Pro on a new iPhone?
+
+Sign in with the Apple Account you used to buy Kroky Pro. Then, in Kroky, open Settings (the gear on Home) and tap Restore Purchases in the Kroky Pro section. The Restore Purchases link on the Kroky Pro screen does the same. This works for both the yearly plan and the lifetime unlock.
+
+### How do I cancel the yearly subscription?
+
+In Kroky, open Settings › Manage Subscription. Or, in the iOS Settings app, tap your name › Subscriptions › Kroky. Cancel at least 24 hours before the renewal date and you won't be charged again. Kroky Pro stays on until the end of the period you paid for, or until the free trial ends. Apple handles all billing and refunds, so for a refund go to reportaproblem.apple.com. The lifetime unlock is a single payment, not a subscription, so there's nothing to cancel.
+
+### How do I remove an avoided place?
+
+In Kroky, open Settings › Avoided places. Swipe left on a place and tap Remove, or tap Clear All to remove them all. Future loops may use those streets again.
+
+### What happens to my data?
+
+It stays on your iPhone. Kroky has no account and no server. See the Privacy Policy for what goes to Apple and OpenStreetMap to plan loops and check the weather.
