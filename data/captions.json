@@ -266,7 +266,7 @@
   },
   "nudge": {
    "title": "Un aviso en el\nmomento justo",
-   "subtitle": "Solo en tu horario y solo si no llueve. También puede evitar tus reuniones."
+   "subtitle": "Solo en tu horario y solo si no llueve. Y puede no avisarte durante tus reuniones."
   },
   "route": {
    "title": "Un paseo a la\nmedida de tu meta",
@@ -329,7 +329,7 @@
    "subtitle": "Seuraa lenkkiä live-kartalla, halutessasi puheopastuksen kanssa."
   },
   "walk": {
-   "title": "Kurota tänään\naskelvaje umpeen",
+   "title": "Kuro tänään\naskelvaje umpeen",
    "subtitle": "Näe, mitä kävely toi lisää, ja pidä lenkit, joista pidät."
   },
   "settings": {
@@ -560,7 +560,7 @@
   },
   "guide": {
    "title": "Ogni svolta,\nproprio in Kroky",
-   "subtitle": "Segui il giro su una mappa dal vivo, con indicazioni vocali se vuoi."
+   "subtitle": "Segui il giro su una mappa in tempo reale, con indicazioni vocali se vuoi."
   },
   "walk": {
    "title": "Colma il divario\ndi passi di oggi",
@@ -581,7 +581,7 @@
    "subtitle": "設定した時間帯の、雨が降っていないときだけ。会議中は控えることもできます。"
   },
   "route": {
-   "title": "歩数の目標に\n合わせた散歩",
+   "title": "目標歩数に\n合わせた散歩",
    "subtitle": "近くの公園をめぐって、今いる場所に戻ってくるループです。"
   },
   "guide": {
@@ -838,7 +838,7 @@
   },
   "nudge": {
    "title": "Przypomnienie\nw dobrej chwili",
-   "subtitle": "Tylko w wybranych godzinach i tylko, gdy nie pada. Może też pomijać spotkania."
+   "subtitle": "Tylko w wybranych godzinach i tylko gdy nie pada. Może też pomijać spotkania."
   },
   "route": {
    "title": "Spacer na miarę\ncelu kroków",
@@ -859,7 +859,7 @@
  },
  "pt-BR": {
   "home": {
-   "title": "Sabe quando você\nfica muito sentado",
+   "title": "Percebe quando você\nfica muito sentado",
    "subtitle": "O Kroky acompanha seus passos e espera um tempo sem chuva."
   },
   "nudge": {
@@ -890,7 +890,7 @@
   },
   "nudge": {
    "title": "Um alerta no\nmomento certo",
-   "subtitle": "Só no seu horário e só quando não chove. Também pode evitar as suas reuniões."
+   "subtitle": "Só no seu horário e só quando não chove. Também pode ficar em silêncio durante as reuniões."
   },
   "route": {
    "title": "Uma caminhada à\nmedida do objetivo",
@@ -919,7 +919,7 @@
    "subtitle": "Doar în orele alese și doar când e uscat afară. Poate omite și ședințele."
   },
   "route": {
-   "title": "O plimbare după\nobiectivul de pași",
+   "title": "O plimbare pe măsura\nobiectivului de pași",
    "subtitle": "O buclă prin parcurile din apropiere, care pornește și se termină unde sunteți."
   },
   "guide": {

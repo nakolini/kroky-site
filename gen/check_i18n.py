@@ -8,7 +8,7 @@ from collections import Counter
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 # Keys that must stay exactly as in English.
-FIXED = {"g1.slug", "g2.slug", "g3.slug"}
+FIXED = {"g1.slug", "g2.slug", "g3.slug", "g4.slug", "g5.slug"}
 
 
 def load(code):

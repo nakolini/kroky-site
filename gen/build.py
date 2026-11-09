@@ -20,7 +20,12 @@ OTHER_APPS = [("footer.anonimo", "https://anonimo.nakolini.com/"),
               ("footer.expenny", "https://expenny.nakolini.com/"),
               ("footer.prospekt", "https://prospekt.nakolini.com/")]
 # Bump when the pages change meaningfully: sitemap lastmod and JSON-LD dateModified.
-SITE_UPDATED = "2026-10-25"
+SITE_UPDATED = "2026-11-09"
+# The App Store release of version 1.0.
+RELEASED = "2026-11-03"
+STORE_URL = "https://apps.apple.com/us/app/kroky-walk-breaks/id%s" % APP_ID
+# The App Store lists the app under its co-founder's developer account.
+DEVELOPER = {"@type": "Person", "name": "Vitalii Kikot", "url": "https://apps.apple.com/us/developer/vitalii-kikot/id1871566359"}
 
 # (code: hreflang, <html lang> and the app's language code; URL segment; name in that language)
 LANGUAGES = [
@@ -106,13 +111,13 @@ SPACE_GROUP = {"fr": NNBSP, "fr-CA": NBSP, "cs": NBSP, "sk": NBSP, "ru": NBSP, "
                "nb": NBSP, "sv": NBSP, "hu": NBSP, "pt-PT": NBSP}
 NO_GROUP_UNDER_10K = {"es", "hu", "pl", "pt-PT", "sl"}
 SHOTS = ["route", "home", "guide", "nudge", "walk", "settings"]
-GUIDES = ["g1", "g2", "g3"]
+GUIDES = ["g1", "g2", "g3", "g4", "g5"]
 # Stride and pace the step table assumes: the app's defaults before it learns the walker's own (StrideCalibration).
 STRIDE_M, PACE_M_PER_MIN = 0.75, 75  # 100 steps a minute
 TABLE_STEPS = [1000, 2000, 3000, 4000, 5000, 8000, 10000]
 
 # Generated paths, removed before each build so stale pages never linger.
-GENERATED_DIRS = ["guides"] + [s for _, s, _ in LANGUAGES if s]
+GENERATED_DIRS = ["guides", "get", "press"] + [s for _, s, _ in LANGUAGES if s]
 GENERATED_FILES = ["index.html", "support.html", "privacy-policy.html", "terms.html", "404.html", "sitemap.xml",
                    "robots.txt", "llms.txt", ".nojekyll", "CNAME"]
 
@@ -216,6 +221,7 @@ ICONS = {
     "globe": '<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3.5 3 14.5 0 18M12 3c-3 3.5-3 14.5 0 18"/>',
     "phone": '<rect x="6" y="2" width="12" height="20" rx="3"/><path d="M10 5h4"/>',
     "person": '<circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/>',
+    "check": '<path d="m5 12.5 4.5 4.5L19 7.5"/>',
     "shield": '<path d="M12 3 4 6v6c0 4.5 3.4 8.3 8 9 4.6-.7 8-4.5 8-9V6z"/><path d="m9 12 2 2 4-4"/>',
 }
 
@@ -264,10 +270,13 @@ def header(lang, path):
     return """<a class="skip" href="#main">{skip}</a>
 <header class="site-header"><div class="wrap bar">
 <a class="brand" href="{home}"><img src="/assets/icon-64.png" width="32" height="32" alt="">Kroky</a>
-<nav class="nav" aria-label="Kroky"><a href="{home}#how">{how}</a><a href="{home}#faq">{faq}</a><a href="{home}guides/">{guides}</a></nav>
+<nav class="nav" aria-label="Kroky"><a href="{home}#how">{how}</a><a href="{home}#plans">{plans}</a><a href="{home}#faq">{faq}</a><a href="{home}guides/">{guides}</a></nav>
+<a class="get" href="{get_url}" aria-label="{get_label}">{get}</a>
 {switch}
-</div></header>""".format(skip=lang.t("nav.skip"), home=home, how=lang.t("nav.how"), faq=lang.t("nav.faq"),
-                          guides=lang.t("nav.guides"), switch=lang_switch(lang, path))
+</div></header>""".format(skip=lang.t("nav.skip"), home=home, how=lang.t("nav.how"), plans=lang.t("nav.plans"),
+                          faq=lang.t("nav.faq"), guides=lang.t("nav.guides"), get_url=e(app_store_url("web_header")),
+                          get_label=e(plain(lang.t("nav.get_app"))), get=lang.t("nav.get"),
+                          switch=lang_switch(lang, path))
 
 
 def footer(lang):
@@ -275,26 +284,28 @@ def footer(lang):
     studio = '<a href="%s">%s</a>' % (STUDIO_URL, lang.t("footer.studio"))
     apps = " · ".join('<a href="%s">%s</a>' % (url, lang.t(key)) for key, url in OTHER_APPS)
     return """<footer class="site-footer"><div class="wrap">
-<p class="maker"><a class="maker-logo" href="{studio_url}" aria-hidden="true" tabindex="-1"><img src="/assets/nakolini-mark.png" alt="" width="20" height="20"></a><span>{made}</span></p>
+<p class="maker"><a class="maker-logo" href="{studio_url}" aria-hidden="true" tabindex="-1"><picture><source srcset="/assets/nakolini-mark-white.png" media="(prefers-color-scheme: dark)"><img src="/assets/nakolini-mark.png" alt="" width="20" height="20"></picture></a><span>{made}</span></p>
 <p>{also} {apps}</p>
-<p><a href="{home}support.html">{support}</a> · <a href="{home}privacy-policy.html">{privacy}</a> · <a href="{home}terms.html">{terms}</a> · <a href="{home}guides/">{guides}</a></p>
+<p><a href="{home}support.html">{support}</a> · <a href="{home}privacy-policy.html">{privacy}</a> · <a href="{home}terms.html">{terms}</a> · <a href="{home}guides/">{guides}</a> · <a href="/press/">{press}</a></p>
 <p class="fine">{copyright}</p>
 </div></footer>""".format(
         studio_url=STUDIO_URL, made=lang.t("footer.made_by", studio=studio), also=lang.t("footer.also"), apps=apps,
         home=home, support=lang.t("footer.support"), privacy=lang.t("footer.privacy"), terms=lang.t("footer.terms"),
-        guides=lang.t("nav.guides"), copyright=lang.t("footer.copyright"))
+        guides=lang.t("nav.guides"), press=lang.t("footer.press"), copyright=lang.t("footer.copyright"))
 
 
 def jsonld_script(block):
     return '<script type="application/ld+json">%s</script>\n' % json.dumps(block, ensure_ascii=False).replace("</", "<\\/")
 
 
-def render(lang, path, title, description, body, jsonld=(), og_image=None, noindex=False):
+def render(lang, path, title, description, body, jsonld=(), og_image=None, noindex=False, og_type="website",
+           modified=None, alternates=True):
     canonical = url_for(lang, path)
     if noindex:
         links = '<meta name="robots" content="noindex">\n'
     else:
         links = '<link rel="canonical" href="%s">\n' % e(canonical)
+    if not noindex and alternates:
         links += "".join('<link rel="alternate" hreflang="%s" href="%s">\n' % (o.code, e(url_for(o, path)))
                          for o in ALL_LANGS)
         links += '<link rel="alternate" hreflang="x-default" href="%s">\n' % e(url_for(EN_LANG, path))
@@ -306,7 +317,7 @@ def render(lang, path, title, description, body, jsonld=(), og_image=None, noind
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{title}</title>
 <meta name="description" content="{description}">
-{links}<meta property="og:type" content="website">
+{links}<meta property="og:type" content="{og_type}">{article_time}
 <meta property="og:site_name" content="Kroky">
 <meta property="og:title" content="{title}">
 <meta property="og:description" content="{description}">
@@ -314,8 +325,10 @@ def render(lang, path, title, description, body, jsonld=(), og_image=None, noind
 <meta property="og:image" content="{og_image}">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="{title}">
 <meta property="og:locale" content="{og_locale}">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image:alt" content="{title}">
 <meta name="theme-color" content="#1D6B4B">
 <meta name="color-scheme" content="light dark">
 <meta name="apple-itunes-app" content="app-id={app_id}">
@@ -335,7 +348,8 @@ def render(lang, path, title, description, body, jsonld=(), og_image=None, noind
 """.format(code="en-US" if lang.code == "en" else lang.code, dir=lang.dir, title=e(plain(title)), description=e(plain(description)), links=links,
            canonical=e(canonical), og_image=e(og_image), og_locale=OG_LOCALE.get(lang.code, lang.code.replace("-", "_")), app_id=APP_ID,
            css=asset_url("assets/site.css"), jsonld="".join(jsonld_script(b) for b in jsonld),
-           header=header(lang, path), body=body, footer=footer(lang))
+           header=header(lang, "" if noindex else path), body=body, footer=footer(lang), og_type=og_type,
+           article_time='\n<meta property="article:modified_time" content="%s">' % modified if modified else "")
 
 
 # ---------------------------------------------------------------- structured data
@@ -358,6 +372,10 @@ def app_jsonld(lang):
         "operatingSystem": "iOS 17.0 or later",
         "applicationCategory": "HealthApplication",
         "applicationSubCategory": "Walking, step goal and sitting reminder",
+        "genre": "Health & Fitness",
+        "sameAs": [STORE_URL],
+        "datePublished": RELEASED,
+        "softwareVersion": "1.0",
         "url": url_for(lang, ""),
         "image": BASE_URL + "/assets/icon-512.png",
         "screenshot": ["%s/assets/shots/%s/%s.webp" % (BASE_URL, lang.code, s) for s in SHOTS],
@@ -373,7 +391,7 @@ def app_jsonld(lang):
         ],
         "featureList": [plain(lang.t("features.%d_t" % i)) for i in range(1, 9)],
         "dateModified": SITE_UPDATED,
-        "author": ORG,
+        "author": [ORG, DEVELOPER],
         "publisher": ORG,
     }
 
@@ -392,7 +410,7 @@ def breadcrumbs(lang, crumbs):
 
 def website_jsonld(lang):
     return {"@context": "https://schema.org", "@type": "WebSite", "@id": BASE_URL + "/#site", "name": "Kroky",
-            "url": url_for(lang, ""), "inLanguage": lang.code, "publisher": ORG, "about": {"@id": APP_ENTITY_ID}}
+            "url": BASE_URL + "/", "inLanguage": [l.code for l in ALL_LANGS], "publisher": ORG, "about": {"@id": APP_ENTITY_ID}}
 
 
 # ---------------------------------------------------------------- pages
@@ -402,7 +420,7 @@ def caption_title(lang, shot):
     return lang.captions[shot]["title"].replace("\n", "" if lang.code in CJK_STOP else " ").rstrip()
 
 
-def phone(lang, shot, cls="phone", eager=False):
+def phone(lang, shot, cls="phone", eager=False, decorative=False):
     cap = lang.captions[shot]
     title = caption_title(lang, shot)
     if title[-1] in ".!?。！？…؟।":
@@ -410,24 +428,42 @@ def phone(lang, shot, cls="phone", eager=False):
     else:
         alt = ("%s。%s" if lang.code in CJK_STOP else "%s। %s" if lang.code in DANDA else "%s۔ %s" if lang.code == "ur" else "%s %s" if lang.code == "th" else "%s. %s") % (
             title, cap["subtitle"])
+    # In the strip the figcaption already says it, so screen readers shouldn't hear it twice.
     return ('<div class="%s"><img src="/assets/shots/%s/%s.webp" width="600" height="1304" alt="%s"%s></div>'
-            % (cls, lang.code, shot, e(alt), "" if eager else ' loading="lazy" decoding="async"'))
+            % (cls, lang.code, shot, "" if decorative else e(alt),
+               ' fetchpriority="high"' if eager else ' loading="lazy" decoding="async"'))
+
+
+# "Is Kroky free?" and the Apple Watch question are what people ask first.
+FAQ_ORDER = [1, 6, 16, 2, 3, 4, 5, 7, 8, 9, 10, 11, 12, 13, 14, 15]
 
 
 def faq_items(lang):
-    return [(lang.t("faq.%d_q" % i), lang.t("faq.%d_a" % i)) for i in range(1, 16)]
+    return [(lang.t("faq.%d_q" % i), lang.t("faq.%d_a" % i)) for i in FAQ_ORDER]
+
+
+# Feature cards that are Kroky Pro only: sitting nudges and Skip my meetings.
+PRO_FEATURES = {1, 7}
+
+
+def check_cell(lang, value):
+    if value == lang.t("plans.yes"):
+        return '%s<span class="skip">%s</span>' % (icon("check"), value)
+    return value
 
 
 def home_page(lang):
     shots = "".join(
         '<li><figure>%s<figcaption><strong>%s</strong><span>%s</span></figcaption></figure></li>' % (
-            phone(lang, s), e(caption_title(lang, s)), e(lang.captions[s]["subtitle"]))
-        for s in SHOTS)
+            phone(lang, s, decorative=True), e(caption_title(lang, s)), e(lang.captions[s]["subtitle"]))
+        for s in SHOTS if s != "home")  # Home is the hero
     how = "".join('<li><span class="num">%s</span><div><h3>%s</h3><p>%s</p></div></li>' % (
         lang.num(i), lang.t("how.%d_t" % i), lang.t("how.%d" % i)) for i in range(1, 5))
     feature_icons = ["sit", "sun", "loop", "map", "star", "chart", "calendar", "globe"]
-    features = "".join('<li class="card">%s<h3>%s</h3><p>%s</p></li>' % (
-        icon(feature_icons[i - 1]), lang.t("features.%d_t" % i), lang.t("features.%d" % i)) for i in range(1, 9))
+    pro_tag = '<span class="pro-tag">%s</span>' % lang.t("plans.pro")
+    features = "".join('<li class="card">%s<h3>%s%s</h3><p>%s</p></li>' % (
+        icon(feature_icons[i - 1]), lang.t("features.%d_t" % i), pro_tag if i in PRO_FEATURES else "",
+        lang.t("features.%d" % i)) for i in range(1, 9))
     privacy = "".join('<li class="card">%s<h3>%s</h3><p>%s</p></li>' % (
         icon(name), lang.t("privacy.%d_t" % i), lang.t("privacy.%d" % i))
         for i, name in ((1, "phone"), (2, "person"), (3, "shield")))
@@ -435,10 +471,10 @@ def home_page(lang):
     rows = [("row_loops", one, unl), ("row_shuffle", one, unl), ("row_weather", y, y), ("row_steps", y, y),
             ("row_guide", y, y), ("row_maps", y, y), ("row_edit", y, y), ("row_week", y, y),
             ("row_nudges", n, y), ("row_reminders", n, y), ("row_meetings", n, y), ("row_favorites", n, y)]
-    plans = "".join('<tr><th scope="row">%s</th><td>%s</td><td>%s</td></tr>' % (lang.t("plans." + k), a, b)
-                    for k, a, b in rows)
+    plans = "".join('<tr><th scope="row">%s</th><td>%s</td><td>%s</td></tr>' % (
+        lang.t("plans." + k), check_cell(lang, a), check_cell(lang, b)) for k, a, b in rows)
     price_note = lang.t("plans.note") + (" " + lang.t("plans.price_us") if lang.english else "")
-    faq = "".join('<details class="row"><summary><h3>%s</h3></summary><p>%s</p></details>' % (q, a)
+    faq = "".join('<details class="row"><summary><span class="q">%s</span></summary><p>%s</p></details>' % (q, a)
                   for q, a in faq_items(lang))
     guides = guide_cards(lang)
     chips = "".join("<li>%s</li>" % lang.t("home.chip_%d" % i) for i in range(1, 4))
@@ -450,13 +486,14 @@ def home_page(lang):
 <p class="actions">{badge}</p>
 <p class="facts">{facts}</p>
 <ul class="chips">{chips}</ul>
+<p class="qr"><img src="/assets/qr-app-store.svg" width="96" height="96" alt=""><span>{qr}</span></p>
 </div>
 <div class="hero-phone">{hero_phone}</div>
 </div></section>
 
 <section class="shots" aria-labelledby="shots-h"><div class="wrap">
 <h2 id="shots-h">{shots_h2}</h2>
-<ul class="strip">{shots}</ul>
+<ul class="strip" tabindex="0" role="region" aria-label="{shots_label}">{shots}</ul>
 </div></section>
 
 <section id="how" class="wrap section"><h2>{how_h2}</h2><ol class="list how">{how}</ol></section>
@@ -465,18 +502,15 @@ def home_page(lang):
 
 <section class="wrap section"><h2>{privacy_h2}</h2><ul class="cards three">{privacy}</ul><p class="more">{privacy_more}</p></section>
 
-<section class="wrap section"><h2>{plans_h2}</h2>
+<section id="plans" class="wrap section"><h2>{plans_h2}</h2>
+<p class="promise">{promise}</p>
 <div class="group table-wrap"><table class="plans"><thead><tr><td></td><th scope="col">{free}</th><th scope="col">{pro}</th></tr></thead><tbody>{plans}</tbody></table></div>
-<p class="note">{price_note}</p></section>
+<p class="note">{price_note}</p>
+<p class="actions">{badge_plans}</p></section>
 
 <section id="faq" class="wrap section"><h2>{faq_h2}</h2><div class="group faq">{faq}</div></section>
 
 <section class="wrap section"><h2>{guides_h2}</h2>{guides}</section>
-
-<section class="wrap section"><div class="group maker-card">
-<img src="/assets/nakolini-mark.png" width="48" height="48" alt="nakolini">
-<div><h2>{maker_h2}</h2><p>{maker_text}</p><p><a class="button secondary" href="{studio}">{maker_link}</a></p></div>
-</div></section>
 
 <section class="cta"><div class="wrap">
 <img src="/assets/icon-192.png" width="96" height="96" alt="">
@@ -485,14 +519,15 @@ def home_page(lang):
 <p class="actions">{badge_end}</p>
 </div></section>""".format(
         eyebrow=lang.t("home.eyebrow"), h1=lang.t("home.h1"), lead=lang.t("home.lead"),
-        badge=store_badge(lang, "web_home_hero"), facts=lang.t("home.facts"), chips=chips,
+        badge=store_badge(lang, "web_home_hero"), facts=lang.t("home.facts"), chips=chips, qr=lang.t("home.qr"),
+        shots_label=e(plain(lang.t("home.shots_h2"))), promise=lang.t("plans.promise"),
+        badge_plans=store_badge(lang, "web_home_plans", height=48),
         hero_phone=phone(lang, "home", eager=True), shots_h2=lang.t("home.shots_h2"), shots=shots,
         how_h2=lang.t("how.h2"), how=how, features_h2=lang.t("features.h2"), features=features,
         privacy_h2=lang.t("privacy.h2"), privacy=privacy, privacy_more=lang.t("privacy.more"),
         plans_h2=lang.t("plans.h2"), free=lang.t("plans.free"), pro=lang.t("plans.pro"), plans=plans,
         price_note=price_note, faq_h2=lang.t("faq.h2"), faq=faq, guides_h2=lang.t("guides.h2"), guides=guides,
-        maker_h2=lang.t("maker.h2"), maker_text=lang.t("maker.text"), studio=STUDIO_URL,
-        maker_link=lang.t("maker.link"), cta_h2=lang.t("cta.h2"), cta_text=lang.t("cta.text"),
+        cta_h2=lang.t("cta.h2"), cta_text=lang.t("cta.text"),
         badge_end=store_badge(lang, "web_home_end"))
     title = "%s · %s" % (lang.store["name"], lang.store["subtitle"])
     return render(lang, "", title, lang.t("home.description"), body,
@@ -508,7 +543,7 @@ def guide_cards(lang):
 
 def app_box(lang, campaign):
     return """<aside class="group app-box"><img src="/assets/icon-192.png" width="64" height="64" alt="">
-<div><h2>{name}</h2><p>{sub}</p></div>{badge}</aside>""".format(
+<div><p class="app-name">{name}</p><p>{sub}</p></div>{badge}</aside>""".format(
         name=e(lang.store["name"]), sub=e(lang.store["subtitle"]), badge=store_badge(lang, campaign, height=48))
 
 
@@ -529,6 +564,23 @@ def step_table(lang):
         note=lang.t("g2.table_note"))
 
 
+# A second real screen beside the guide section it illustrates.
+SECTION_SHOTS = {("g1", "setup_h2"): "settings", ("g2", "kroky_h2"): "walk", ("g3", "how_h2"): "guide",
+                 ("g4", "compare_h2"): "nudge", ("g5", "kroky_h2"): "route"}
+
+
+def section_html(lang, g, key, content):
+    heading = "<h2>%s</h2>" % lang.t("%s.%s" % (g, key))
+    shot = SECTION_SHOTS.get((g, key))
+    if not shot:
+        return heading + content
+    return '%s<div class="answer-grid shot-grid"><div>%s</div>%s</div>' % (
+        heading, content, phone(lang, shot, cls="phone small"))
+
+
+GUIDE_PUBLISHED = {"g1": "2026-10-25", "g2": "2026-10-25", "g3": "2026-10-25", "g4": SITE_UPDATED, "g5": SITE_UPDATED}
+
+
 def guide_page(lang, g):
     slug = EN[g + ".slug"]
     sections = {
@@ -537,22 +589,29 @@ def guide_page(lang, g):
                ("limits_h2", "<p>%s</p>" % lang.t("g1.limits"))],
         "g2": [("table_h2", step_table(lang)), ("own_h2", "<p>%s</p>" % lang.t("g2.own")),
                ("kroky_h2", "<p>%s</p>" % lang.t("g2.kroky"))],
+        "g4": [("compare_h2", "<p>%s</p>" % lang.t("g4.compare")),
+               ("needs_h2", '<ul class="plain">%s</ul>' % "".join("<li>%s</li>" % lang.t("g4.needs_%d" % i) for i in range(1, 4))),
+               ("limits_h2", "<p>%s</p>" % lang.t("g4.limits"))],
+        "g5": [("math_h2", "<p>%s</p>" % lang.t("g5.math")),
+               ("when_h2", '<ul class="plain">%s</ul>' % "".join("<li>%s</li>" % lang.t("g5.when_%d" % i) for i in range(1, 5))),
+               ("kroky_h2", "<p>%s</p>" % lang.t("g5.kroky"))],
         "g3": [("how_h2", "<p>%s</p>" % lang.t("g3.how")),
                ("change_h2", '<ul class="plain">%s</ul>' % "".join("<li>%s</li>" % lang.t("g3.change_%d" % i) for i in range(1, 5))),
                ("limits_h2", "<p>%s</p>" % lang.t("g3.limits"))],
     }[g]
-    shot = {"g1": "nudge", "g2": "home", "g3": "route"}[g]
+    shot = {"g1": "nudge", "g2": "home", "g3": "route", "g4": "home", "g5": "walk"}[g]
     body = """<article class="wrap prose guide">
-<nav class="crumbs"><a href="{home}">Kroky</a> › <a href="{home}guides/">{guides}</a></nav>
+<nav class="crumbs" aria-label="Breadcrumb"><a href="{home}">Kroky</a> › <a href="{home}guides/">{guides}</a></nav>
 <h1>{h1}</h1>
-<div class="answer-grid"><p class="answer">{answer}</p>{phone}</div>
+<div class="answer-grid"><div><p class="answer">{answer}</p><p class="actions">{badge_top}</p></div>{phone}</div>
 {sections}
 {box}
 <h2>{more}</h2>{others}
 </article>""".format(
         home=lang.prefix, guides=lang.t("nav.guides"), h1=lang.t(g + ".h1"), answer=lang.t(g + ".answer"),
         phone=phone(lang, shot, cls="phone small", eager=True),
-        sections="".join("<h2>%s</h2>%s" % (lang.t("%s.%s" % (g, k)), v) for k, v in sections),
+        badge_top=store_badge(lang, "web_guide_%s_top" % g, height=44),
+        sections="".join(section_html(lang, g, k, v) for k, v in sections),
         box=app_box(lang, "web_guide_" + g), more=lang.t("guides.h2"),
         others='<ul class="plain links">%s</ul>' % "".join(
             '<li><a href="%sguides/%s/">%s</a></li>' % (lang.prefix, EN[o + ".slug"], lang.t(o + ".h1"))
@@ -560,15 +619,18 @@ def guide_page(lang, g):
     path = "guides/%s/" % slug
     article = {"@context": "https://schema.org", "@type": "Article", "headline": plain(lang.t(g + ".h1")),
                "description": plain(lang.t(g + ".description")), "inLanguage": lang.code,
-               "url": url_for(lang, path), "dateModified": SITE_UPDATED, "author": ORG, "publisher": ORG,
-               "about": {"@id": APP_ENTITY_ID}, "image": "%s/assets/shots/%s/%s.webp" % (BASE_URL, lang.code, shot)}
+               "url": url_for(lang, path), "mainEntityOfPage": url_for(lang, path), "datePublished": GUIDE_PUBLISHED[g],
+               "dateModified": SITE_UPDATED, "author": ORG, "publisher": ORG, "about": {"@id": APP_ENTITY_ID},
+               "image": ["%s/og/%s.png" % (BASE_URL, lang.code),
+                         "%s/assets/shots/%s/%s.webp" % (BASE_URL, lang.code, shot)]}
     crumbs = breadcrumbs(lang, [("Kroky", ""), (lang.t("nav.guides"), "guides/"), (lang.t(g + ".h1"), path)])
-    return path, render(lang, path, lang.t(g + ".title"), lang.t(g + ".description"), body, jsonld=[article, crumbs])
+    return path, render(lang, path, lang.t(g + ".title"), lang.t(g + ".description"), body, jsonld=[article, crumbs],
+                        og_type="article", modified=SITE_UPDATED)
 
 
 def guides_index(lang):
     body = """<div class="wrap prose">
-<nav class="crumbs"><a href="{home}">Kroky</a></nav>
+<nav class="crumbs" aria-label="Breadcrumb"><a href="{home}">Kroky</a></nav>
 <h1>{h1}</h1><p class="lead-dark">{intro}</p>
 {cards}
 {box}
@@ -588,7 +650,7 @@ def legal_page(lang, path, prefix, sections, extra_top=""):
             parts.append("<h2>%s</h2>" % lang.t(heading))
         parts.extend("<p>%s</p>" % lang.t(p) for p in paras)
     body = """<article class="wrap prose legal">
-<nav class="crumbs"><a href="{home}">Kroky</a></nav>
+<nav class="crumbs" aria-label="Breadcrumb"><a href="{home}">Kroky</a></nav>
 <h1>{h1}</h1>
 <p class="meta">{effective}</p>
 {note}{top}{parts}
@@ -657,6 +719,52 @@ def not_found_page():
     return render(lang, "404.html", "Page not found · Kroky", "Page not found.", body, noindex=True)
 
 
+def press_page():
+    """English only: journalists and creators read English, and the facts don't change by language."""
+    lang = EN_LANG
+    shots = "".join('<li><a href="/assets/shots/en/%s.webp">%s</a></li>' % (s, e(caption_title(lang, s))) for s in SHOTS)
+    body = """<article class="wrap prose">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/">Kroky</a></nav>
+<h1>Kroky press kit</h1>
+<p class="answer">{description}</p>
+<h2>Fact sheet</h2>
+<ul class="plain">
+<li><strong>Name:</strong> Kroky: Walk Breaks ("kroky" means "steps" in Ukrainian, Czech and Slovak)</li>
+<li><strong>Platform:</strong> iPhone, iOS 17 or later. On the App Store since November 3, 2026.</li>
+<li><strong>Price:</strong> free. Kroky Pro adds sitting nudges, dry-window reminders, Skip my meetings and unlimited loops: $19.99 a year with a 7-day free trial, or $49.99 once (US prices).</li>
+<li><strong>Privacy:</strong> no account, no server, no analytics, no tracking. Steps, settings and walk history stay on the iPhone.</li>
+<li><strong>Languages:</strong> {n} languages.</li>
+<li><strong>Made by:</strong> <a href="{studio}">nakolini</a>, a two-person studio of Dmytro Hryb and Vitalii Kikot.</li>
+</ul>
+<h2>Downloads</h2>
+<ul class="plain">
+<li><a href="/assets/icon-512.png">App icon (512 × 512 PNG)</a></li>
+<li><a href="/og/en.png">Social image (1200 × 630 PNG)</a></li>
+<li>Screenshots (English): <ul class="plain">{shots}</ul></li>
+</ul>
+<p>Screenshots in each of Kroky's languages are at <code>/assets/shots/&lt;language&gt;/</code>, and the App Store page has the full captioned set.</p>
+<h2>Contact</h2>
+<p>Writing about Kroky or making a video? Email {email}, and we'll send you a Kroky Pro promo code and answer your questions.</p>
+{box}
+</article>""".format(description=e(plain(lang.t("home.description"))), n=len(ALL_LANGS), studio=STUDIO_URL, shots=shots,
+                     email='<a href="mailto:%s">%s</a>' % (EMAIL, EMAIL), box=app_box(lang, "web_press"))
+    return render(lang, "press/", "Kroky press kit · Kroky: Walk Breaks",
+                  "Fact sheet, app icon and screenshots for Kroky: Walk Breaks, the iPhone app that plans walk breaks "
+                  "sized to your step goal.", body, alternates=False,
+                  jsonld=[breadcrumbs(lang, [("Kroky", ""), ("Press kit", "press/")])])
+
+
+def get_page():
+    """A short link to say out loud or print: kroky.nakolini.com/get goes straight to the App Store."""
+    url = e(app_store_url("web_get"))
+    return """<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="robots" content="noindex">
+<title>Kroky on the App Store</title>
+<meta http-equiv="refresh" content="0;url={url}">
+</head><body><p><a href="{url}">Kroky: Walk Breaks on the App Store</a></p></body></html>
+""".format(url=url)
+
+
 # ---------------------------------------------------------------- site files
 
 def page_paths():
@@ -673,6 +781,7 @@ def sitemap():
             out.extend('<xhtml:link rel="alternate" hreflang="%s" href="%s"/>' % (o.code, e(url_for(o, path)))
                        for o in ALL_LANGS)
             out.append('<xhtml:link rel="alternate" hreflang="x-default" href="%s"/></url>' % e(url_for(EN_LANG, path)))
+    out.append("<url><loc>%s</loc><lastmod>%s</lastmod></url>" % (e(url_for(EN_LANG, "press/")), SITE_UPDATED))
     out.append("</urlset>")
     return "\n".join(out) + "\n"
 
@@ -736,11 +845,15 @@ def llms_txt():
         "- [Support](%s/support.html): Apple Health access, nudges, restoring and cancelling Kroky Pro, contact" % BASE_URL,
         "- [Privacy Policy](%s/privacy-policy.html): collects nothing; what goes to Apple and OpenStreetMap" % BASE_URL,
         "- [Terms of Use](%s/terms.html): Apple's standard EULA plus walking safety, Kroky Pro billing, map data" % BASE_URL,
-        "- [App Store](https://apps.apple.com/app/id%s)" % APP_ID,
+        "- [App Store](%s)" % STORE_URL,
+        "- [Press kit](%s/press/): fact sheet, icon and screenshots" % BASE_URL,
         "- [nakolini, the studio behind Kroky](%s)" % STUDIO_URL,
         "",
         "## Facts",
         "",
+        "- On the App Store since %s (version 1.0): %s. The App Store lists the developer as Vitalii Kikot, "
+        "co-founder of nakolini" % (RELEASED, STORE_URL),
+        "- Category: Health & Fitness. Price: free, with in-app purchases (Kroky Pro)",
         "- App Store name: Kroky: Walk Breaks. Localized names: %s" % "; ".join(
             sorted({s["name"] for k, s in STORE.items() if s["name"] != STORE["en"]["name"]})),
         "- What it does: reads steps from Apple Health, notices a long sit (90 minutes by default), finds today's dry "
@@ -766,7 +879,7 @@ def llms_txt():
     ]
     for q, a in faq_items(en):
         lines += ["### %s" % plain(q), "", plain(a), ""]
-    lines += ["## Languages", "", "Every page is available in: %s." % ", ".join(
+    lines += ["## Optional", "", "- Every page is available in: %s." % ", ".join(
         "%s (%s)" % (l.name, url_for(l, "")) for l in ALL_LANGS), ""]
     return "\n".join(lines)
 
@@ -802,6 +915,8 @@ def main():
         write(base + "privacy-policy.html", privacy_page(lang))
         write(base + "terms.html", terms_page(lang))
     write("404.html", not_found_page())
+    write("press/index.html", press_page())
+    write("get/index.html", get_page())
     write("sitemap.xml", sitemap())
     write("robots.txt", ROBOTS)
     write("llms.txt", llms_txt())
