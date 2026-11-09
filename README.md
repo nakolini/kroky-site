@@ -43,3 +43,7 @@ python3 scripts/og.py                     # og/<code>.png via headless Chrome
 After a release, submit `https://kroky.nakolini.com/sitemap.xml` in Google Search Console and Bing Webmaster Tools.
 If the App Store Connect provider token becomes known, set `PROVIDER_TOKEN` in `gen/build.py` so badge clicks
 are attributed to campaigns.
+
+`assets/qr-app-store.svg` (the desktop hero's QR code to the App Store, `ct=web_qr`) was made once with the `segno`
+package; regenerate it the same way if the App ID or the provider token changes. `/get/` is a short link to the App
+Store (`ct=web_get`) for podcasts, talks and print; `/press/` is the English-only press kit.
