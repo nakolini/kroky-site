@@ -529,6 +529,19 @@ def step_table(lang):
         note=lang.t("g2.table_note"))
 
 
+# A second real screen beside the guide section it illustrates.
+SECTION_SHOTS = {("g1", "setup_h2"): "settings", ("g2", "kroky_h2"): "walk", ("g3", "how_h2"): "guide"}
+
+
+def section_html(lang, g, key, content):
+    heading = "<h2>%s</h2>" % lang.t("%s.%s" % (g, key))
+    shot = SECTION_SHOTS.get((g, key))
+    if not shot:
+        return heading + content
+    return '%s<div class="answer-grid shot-grid"><div>%s</div>%s</div>' % (
+        heading, content, phone(lang, shot, cls="phone small"))
+
+
 def guide_page(lang, g):
     slug = EN[g + ".slug"]
     sections = {
@@ -552,7 +565,7 @@ def guide_page(lang, g):
 </article>""".format(
         home=lang.prefix, guides=lang.t("nav.guides"), h1=lang.t(g + ".h1"), answer=lang.t(g + ".answer"),
         phone=phone(lang, shot, cls="phone small", eager=True),
-        sections="".join("<h2>%s</h2>%s" % (lang.t("%s.%s" % (g, k)), v) for k, v in sections),
+        sections="".join(section_html(lang, g, k, v) for k, v in sections),
         box=app_box(lang, "web_guide_" + g), more=lang.t("guides.h2"),
         others='<ul class="plain links">%s</ul>' % "".join(
             '<li><a href="%sguides/%s/">%s</a></li>' % (lang.prefix, EN[o + ".slug"], lang.t(o + ".h1"))

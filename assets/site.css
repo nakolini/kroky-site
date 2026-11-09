@@ -234,7 +234,7 @@ body:lang(ur) { line-height: 1.8; }
   .lang { margin-inline-start: auto; }
   .lang ul { grid-template-columns: repeat(2, minmax(130px, 1fr)); }
   .answer-grid { grid-template-columns: 1fr; }
-  .answer-grid .phone { display: none; }
+  .answer-grid .phone { width: min(220px, 60vw); margin: 8px auto 0; }
 }
 @media (max-width: 520px) {
   body { font-size: 16px; }
