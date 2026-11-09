@@ -209,7 +209,7 @@
  },
  "en-GB": {
   "home": {
-   "title": "Knows when you've\nsat too long",
+   "title": "Knows when you've\nbeen sitting too long",
    "subtitle": "Kroky reads your steps and waits for dry weather."
   },
   "nudge": {
@@ -235,7 +235,7 @@
  },
  "en-AU": {
   "home": {
-   "title": "Knows when you've\nsat too long",
+   "title": "Knows when you've\nbeen sitting too long",
    "subtitle": "Kroky reads your steps and waits for dry weather."
   },
   "nudge": {
@@ -339,7 +339,7 @@
  },
  "fr": {
   "home": {
-   "title": "Sait quand vous\nrestez trop assis",
+   "title": "Sait quand vous êtes\nassis trop longtemps",
    "subtitle": "Kroky lit vos pas et attend un temps sec."
   },
   "nudge": {
@@ -348,7 +348,7 @@
   },
   "route": {
    "title": "Une boucle adaptée\nà votre objectif",
-   "subtitle": "Une boucle par les parcs voisins, qui part et revient là où vous êtes."
+   "subtitle": "Une boucle par les parcs voisins, qui part de là où vous êtes et y revient."
   },
   "guide": {
    "title": "Chaque virage,\nsans quitter Kroky",
@@ -365,7 +365,7 @@
  },
  "fr-CA": {
   "home": {
-   "title": "Sait quand vous\nrestez trop assis",
+   "title": "Sait quand vous êtes\nassis trop longtemps",
    "subtitle": "Kroky lit vos pas et attend un temps sec."
   },
   "nudge": {
@@ -374,7 +374,7 @@
   },
   "route": {
    "title": "Une boucle adaptée\nà votre objectif",
-   "subtitle": "Une boucle dans les parcs voisins, qui part et revient là où vous êtes."
+   "subtitle": "Une boucle dans les parcs voisins, qui part de là où vous êtes et y revient."
   },
   "guide": {
    "title": "Chaque virage,\nsans quitter Kroky",
@@ -547,7 +547,7 @@
  },
  "it": {
   "home": {
-   "title": "Sa quando sei\nseduto da troppo",
+   "title": "Sa quando sei seduto\nda troppo tempo",
    "subtitle": "Kroky legge i tuoi passi e aspetta che non piova."
   },
   "nudge": {
@@ -834,11 +834,11 @@
  "pl": {
   "home": {
    "title": "Wie, kiedy\nsiedzisz za długo",
-   "subtitle": "Kroky sprawdza twoje kroki i czeka na pogodę bez deszczu."
+   "subtitle": "Kroky sprawdza twoje kroki i czeka na suchą pogodę."
   },
   "nudge": {
    "title": "Przypomnienie\nw dobrej chwili",
-   "subtitle": "Tylko w wybranych godzinach i tylko gdy nie pada. Może też pomijać spotkania."
+   "subtitle": "Tylko w wybranych godzinach i tylko wtedy, gdy nie pada. Może też pomijać spotkania."
   },
   "route": {
    "title": "Spacer na miarę\ncelu kroków",
@@ -864,7 +864,7 @@
   },
   "nudge": {
    "title": "Um alerta na\nhora certa",
-   "subtitle": "Só no seu horário e só quando não está chovendo. Também pode evitar suas reuniões."
+   "subtitle": "Só no seu horário e só quando não está chovendo. Também pode ficar em silêncio durante suas reuniões."
   },
   "route": {
    "title": "Uma caminhada na\nmedida da sua meta",
@@ -886,7 +886,7 @@
  "pt-PT": {
   "home": {
    "title": "Sabe quando está\nsentado há muito",
-   "subtitle": "O Kroky lê os seus passos e espera por tempo seco."
+   "subtitle": "O Kroky lê os seus passos e espera que não chova."
   },
   "nudge": {
    "title": "Um alerta no\nmomento certo",
