@@ -760,10 +760,9 @@ def get_page():
     return """<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="robots" content="noindex">
 <title>Kroky on the App Store</title>
-<link rel="canonical" href="{store}">
 <meta http-equiv="refresh" content="0;url={url}">
 </head><body><p><a href="{url}">Kroky: Walk Breaks on the App Store</a></p></body></html>
-""".format(url=url, store=e(STORE_URL))
+""".format(url=url)
 
 
 # ---------------------------------------------------------------- site files
