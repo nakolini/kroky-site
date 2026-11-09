@@ -40,7 +40,11 @@ python3 scripts/og.py                     # og/<code>.png via headless Chrome
 - Terms of Use: `/terms.html` and `/<code>/terms.html`. They incorporate Apple's standard EULA.
 - Support: `/support.html`. Guides: `/guides/`.
 
-After a release, submit `https://kroky.nakolini.com/sitemap.xml` in Google Search Console and Bing Webmaster Tools.
+Each page's last-modified date lives in `data/lastmod.json` (commit it): the build moves a page's date only when its
+content changes, and the sitemap and JSON-LD `dateModified` use it. After a deploy is live, run
+`python3 scripts/indexnow.py` to send the pages that changed today to IndexNow (Bing, and through it Copilot and
+ChatGPT search). Google has no ping: submit `https://kroky.nakolini.com/sitemap.xml` once in Search Console.
+`llms.txt` is the short summary for AI assistants and `llms-full.txt` holds the full English text.
 If the App Store Connect provider token becomes known, set `PROVIDER_TOKEN` in `gen/build.py` so badge clicks
 are attributed to campaigns.
 

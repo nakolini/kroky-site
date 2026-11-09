@@ -5,7 +5,7 @@ Python 3.9+ standard library only. Run from anywhere: python3 gen/build.py
 Copy is in i18n/<lang>.json (en.json is the source), the App Store names and the screenshot captions are in data/,
 and the output is written to the repo root, which GitHub Pages serves as is.
 """
-import decimal, hashlib, html, json, os, re, shutil
+import datetime, decimal, hashlib, html, json, os, re, shutil
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 BASE_URL = "https://kroky.nakolini.com"
@@ -21,6 +21,13 @@ OTHER_APPS = [("footer.anonimo", "https://anonimo.nakolini.com/"),
               ("footer.prospekt", "https://prospekt.nakolini.com/")]
 # Bump when the pages change meaningfully: sitemap lastmod and JSON-LD dateModified.
 SITE_UPDATED = "2026-11-09"
+# Pages carry this token where their own last-modified date goes; write() swaps in the date from data/lastmod.json,
+# which only moves when the page's content changes, so sitemap lastmod and dateModified stay honest.
+MODIFIED = "@@MODIFIED@@"
+LASTMOD_FILE = "data/lastmod.json"
+# IndexNow (Bing, Yandex, Seznam, Naver; Bing feeds Copilot and ChatGPT search): the key file at the site root
+# proves we own the host. scripts/indexnow.py submits the pages whose lastmod is today.
+INDEXNOW_KEY = "6b0f3c1e9a8d4f27b5c2e1d0a9f8c7b6"
 # The App Store release of version 1.0.
 RELEASED = "2026-11-03"
 STORE_URL = "https://apps.apple.com/us/app/kroky-walk-breaks/id%s" % APP_ID
@@ -118,7 +125,7 @@ TABLE_STEPS = [1000, 2000, 3000, 4000, 5000, 8000, 10000]
 
 # Generated paths, removed before each build so stale pages never linger.
 GENERATED_DIRS = ["guides", "get", "press"] + [s for _, s, _ in LANGUAGES if s]
-GENERATED_FILES = ["index.html", "support.html", "privacy-policy.html", "terms.html", "404.html", "sitemap.xml",
+GENERATED_FILES = ["llms-full.txt", "index.html", "support.html", "privacy-policy.html", "terms.html", "404.html", "sitemap.xml",
                    "robots.txt", "llms.txt", ".nojekyll", "CNAME"]
 
 
@@ -390,7 +397,7 @@ def app_jsonld(lang):
              "eligibleRegion": {"@type": "Country", "name": "US"}},
         ],
         "featureList": [plain(lang.t("features.%d_t" % i)) for i in range(1, 9)],
-        "dateModified": SITE_UPDATED,
+        "dateModified": MODIFIED,
         "author": [ORG, DEVELOPER],
         "publisher": ORG,
     }
@@ -620,12 +627,12 @@ def guide_page(lang, g):
     article = {"@context": "https://schema.org", "@type": "Article", "headline": plain(lang.t(g + ".h1")),
                "description": plain(lang.t(g + ".description")), "inLanguage": lang.code,
                "url": url_for(lang, path), "mainEntityOfPage": url_for(lang, path), "datePublished": GUIDE_PUBLISHED[g],
-               "dateModified": SITE_UPDATED, "author": ORG, "publisher": ORG, "about": {"@id": APP_ENTITY_ID},
+               "dateModified": MODIFIED, "author": ORG, "publisher": ORG, "about": {"@id": APP_ENTITY_ID},
                "image": ["%s/og/%s.png" % (BASE_URL, lang.code),
                          "%s/assets/shots/%s/%s.webp" % (BASE_URL, lang.code, shot)]}
     crumbs = breadcrumbs(lang, [("Kroky", ""), (lang.t("nav.guides"), "guides/"), (lang.t(g + ".h1"), path)])
     return path, render(lang, path, lang.t(g + ".title"), lang.t(g + ".description"), body, jsonld=[article, crumbs],
-                        og_type="article", modified=SITE_UPDATED)
+                        og_type="article", modified=MODIFIED)
 
 
 def guides_index(lang):
@@ -777,11 +784,12 @@ def sitemap():
            '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">']
     for path in page_paths():
         for lang in ALL_LANGS:
-            out.append("<url><loc>%s</loc><lastmod>%s</lastmod>" % (e(url_for(lang, path)), SITE_UPDATED))
+            out.append("<url><loc>%s</loc><lastmod>%s</lastmod>" % (e(url_for(lang, path)), LASTMOD[url_for(lang, path)]["date"]))
             out.extend('<xhtml:link rel="alternate" hreflang="%s" href="%s"/>' % (o.code, e(url_for(o, path)))
                        for o in ALL_LANGS)
             out.append('<xhtml:link rel="alternate" hreflang="x-default" href="%s"/></url>' % e(url_for(EN_LANG, path)))
-    out.append("<url><loc>%s</loc><lastmod>%s</lastmod></url>" % (e(url_for(EN_LANG, "press/")), SITE_UPDATED))
+    press = url_for(EN_LANG, "press/")
+    out.append("<url><loc>%s</loc><lastmod>%s</lastmod></url>" % (e(press), LASTMOD[press]["date"]))
     out.append("</urlset>")
     return "\n".join(out) + "\n"
 
@@ -815,6 +823,15 @@ User-agent: Google-Extended
 Allow: /
 
 User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: CCBot
 Allow: /
 
 User-agent: Bingbot
@@ -884,7 +901,68 @@ def llms_txt():
     return "\n".join(lines)
 
 
+def load_lastmod():
+    path = os.path.join(ROOT, LASTMOD_FILE)
+    return json.load(open(path, encoding="utf-8")) if os.path.exists(path) else {}
+
+
+LASTMOD_SEEN = load_lastmod()
+LASTMOD = {}
+TODAY = os.environ.get("KROKY_TODAY") or datetime.date.today().isoformat()
+
+
+def stamp(rel, text):
+    """Swaps the page's own last-modified date in for MODIFIED, moving it only when the content changed."""
+    if not rel.endswith(".html") or rel == "404.html":
+        return text
+    url = BASE_URL + "/" + (rel[:-len("index.html")] if rel.endswith("index.html") else rel)
+    # Asset cache-busting hashes change with every CSS edit; they aren't content.
+    digest = hashlib.sha256(re.sub(r"\?v=[0-9a-f]+", "", text).encode("utf-8")).hexdigest()[:16]
+    old = LASTMOD_SEEN.get(url)
+    date = old["date"] if old and old["hash"] == digest else TODAY
+    LASTMOD[url] = {"hash": digest, "date": date}
+    return text.replace(MODIFIED, date)
+
+
+def llms_full_txt():
+    """Every English page's text as Markdown, so an assistant can quote Kroky without fetching and parsing HTML."""
+    en = EN_LANG
+    t = lambda k: plain(en.t(k))
+    out = [llms_txt().rstrip(), "", "# Full text", "", "## Kroky for iPhone (%s/)" % BASE_URL, "",
+           t("home.h1"), "", t("home.lead"), "", "### %s" % t("how.h2"), ""]
+    out += ["%d. %s: %s" % (i, t("how.%d_t" % i), t("how.%d" % i)) for i in range(1, 5)]
+    out += ["", "### %s" % t("features.h2"), ""]
+    out += ["- %s%s: %s" % (t("features.%d_t" % i), " (Kroky Pro)" if i in PRO_FEATURES else "", t("features.%d" % i))
+            for i in range(1, 9)]
+    out += ["", "### %s" % t("privacy.h2"), ""] + ["- %s: %s" % (t("privacy.%d_t" % i), t("privacy.%d" % i)) for i in (1, 2, 3)]
+    out += ["", "### %s" % t("plans.h2"), "", t("plans.promise") + " " + t("plans.note") + " " + t("plans.price_us"), ""]
+    for g in GUIDES:
+        out += ["## %s (%s)" % (t(g + ".h1"), url_for(en, "guides/%s/" % EN[g + ".slug"])), "", t(g + ".answer"), ""]
+        for k in [k for k in EN if k.startswith(g + ".") and k.endswith("_h2")]:
+            base = k[len(g) + 1:-3]
+            out += ["### %s" % t(k), ""]
+            if g == "g2" and base == "table":
+                out += ["| Steps left | Walk | Distance |", "| --- | --- | --- |"]
+                for steps in TABLE_STEPS:
+                    m = steps * STRIDE_M
+                    out.append("| %s | about %s min | %s km (%s mi) |" % (
+                        en.num(steps), en.num(round(m / PACE_M_PER_MIN)), en.num(m / 1000, 1), en.num(m / 1609.344, 1)))
+                out += ["", t("g2.table_note"), ""]
+                continue
+            items = sorted(k2 for k2 in EN if re.fullmatch(r"%s\.%s_\d+" % (g, base), k2))
+            if items:
+                out += ["- " + t(i) for i in items] + [""]
+            elif g + "." + base in EN:
+                out += [t(g + "." + base), ""]
+    s = "support."
+    out += ["## Support (%s/support.html)" % BASE_URL, ""]
+    for q in ["steps", "nudges", "loop", "restore", "cancel", "avoid", "data"]:
+        out += ["### " + t(s + q + "_q"), "", t(s + q + "_a"), ""]
+    return "\n".join(out)
+
+
 def write(rel, text):
+    text = stamp(rel, text)
     path = os.path.join(ROOT, rel)
     os.makedirs(os.path.dirname(path), exist_ok=True)
     with open(path, "w", encoding="utf-8") as f:
@@ -896,7 +974,7 @@ def clean():
         p = os.path.join(ROOT, d)
         if os.path.isdir(p):
             shutil.rmtree(p)
-    for f in GENERATED_FILES:
+    for f in GENERATED_FILES + [n for n in os.listdir(ROOT) if re.fullmatch(r"[0-9a-f]{32}\.txt", n)]:
         p = os.path.join(ROOT, f)
         if os.path.exists(p):
             os.remove(p)
@@ -918,6 +996,11 @@ def main():
     write("press/index.html", press_page())
     write("get/index.html", get_page())
     write("sitemap.xml", sitemap())
+    with open(os.path.join(ROOT, LASTMOD_FILE), "w", encoding="utf-8") as f:
+        json.dump(dict(sorted(LASTMOD.items())), f, indent=0)
+        f.write("\n")
+    write(INDEXNOW_KEY + ".txt", INDEXNOW_KEY)
+    write("llms-full.txt", llms_full_txt())
     write("robots.txt", ROBOTS)
     write("llms.txt", llms_txt())
     write(".nojekyll", "")
