@@ -11,7 +11,7 @@ ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 BASE_URL = "https://kroky.nakolini.com"
 APP_ID = "6824215298"
 # App Store Connect provider token (the pt= of a campaign link). Without it the App Store ignores ct= in Analytics.
-PROVIDER_TOKEN = ""
+PROVIDER_TOKEN = "128480147"
 STUDIO_URL = "https://nakolini.com/"
 STUDIO_LOGO = "https://nakolini.com/assets/logo/nakolini-mark-tile.png"
 EMAIL = "support@kroky.nakolini.com"

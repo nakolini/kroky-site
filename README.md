@@ -45,8 +45,8 @@ content changes, and the sitemap and JSON-LD `dateModified` use it. After a depl
 `python3 scripts/indexnow.py` to send the pages that changed today to IndexNow (Bing, and through it Copilot and
 ChatGPT search). Google has no ping: submit `https://kroky.nakolini.com/sitemap.xml` once in Search Console.
 `llms.txt` is the short summary for AI assistants and `llms-full.txt` holds the full English text.
-If the App Store Connect provider token becomes known, set `PROVIDER_TOKEN` in `gen/build.py` so badge clicks
-are attributed to campaigns.
+`PROVIDER_TOKEN` in `gen/build.py` is the App Store Connect provider token (`pt=`), so every badge, header pill,
+QR and `/get/` click is attributed to its `ct=` campaign in App Analytics (Acquisition → Campaigns).
 
 `assets/qr-app-store.svg` (the desktop hero's QR code to the App Store, `ct=web_qr`) was made once with the `segno`
 package; regenerate it the same way if the App ID or the provider token changes. `/get/` is a short link to the App
